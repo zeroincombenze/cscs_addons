@@ -1,8 +1,9 @@
-# -*- encoding: utf-8 -*-
+# -*- coding: utf-8 -*-
 ##############################################################################
 #
 #    OpenERP, Open Source Management Solution
-#    Copyright (C) 2010 Savoir-faire Linux (<http://www.savoirfairelinux.com>).
+#    Copyright (c) 2010-2014 Elico Corp. All Rights Reserved.
+#    Augustin Cisterne-Kaas <augustin.cisterne-kaas@elico-corp.com>
 #
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU Affero General Public License as
@@ -18,32 +19,3 @@
 #    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 ##############################################################################
-{
-    "name": " Quality Management System",
-    "version": "1.0",
-    "author": "Savoir-faire Linux",
-    "website": "http://www.savoirfairelinux.com",
-    "license": "AGPL-3",
-    "category": "Management System",
-    "description": """\
-This module enables you to manage your quality management system, including :
-    * Quality Manual
-    * Reviews
-    * Audits
-    * Procedures
-    * Nonconformities
-    * Actions
-    * Employee Training
-    """,
-    "depends": [
-        'mgmtsystem_audit',
-        'document_page_quality_manual',
-        'mgmtsystem_review',
-    ],
-    "data": ['quality.xml'],
-    "demo": [],
-    "installable": False,
-    "application": True,
-    "certificate": ''
-}
-# vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:
