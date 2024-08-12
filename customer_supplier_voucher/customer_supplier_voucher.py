@@ -21,7 +21,7 @@
 ##############################################################################
 
 from openerp.osv import fields, osv
-import openerp.addons.decimal_precision as dp
+import decimal_precision as dp
 
 class account_voucher(osv.osv):
     _inherit = 'account.voucher'
