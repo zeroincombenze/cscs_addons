@@ -1,0 +1,437 @@
+id,code,type,reconcile,user_type:id,parent_id:id,name
+0,0,view,N,account.data_account_type_view,,CSCS
+1,1,view,Y,account.data_account_type_bank,0,ATTIVO 
+11,11,view,Y,account.data_account_type_view,1,IMMOBILIZZAZIONI IMMATERIALI 
+1101,1101,other,Y,account.data_account_type_asset,11,costi di impianto 
+1102,1102,other,N,account.data_account_type_asset,11,Fondo ammortamento oneri pluriennali
+1106,1106,other,Y,account.data_account_type_asset,11,software 
+1108,1108,other,Y,account.data_account_type_asset,11,avviamento 
+1109,1109,other,N,account.data_account_type_asset,11,"concessioni, licenze, marchi , knowhow e altri"
+1111,1111,other,Y,account.data_account_type_asset,11,fondo ammortamento costi di impianto 
+1116,1116,other,Y,account.data_account_type_asset,11,fondo ammortamento software 
+1118,1118,other,Y,account.data_account_type_asset,11,fondo ammortamento avviamento 
+12,12,view,Y,account.data_account_type_view,1,IMMOBILIZZAZIONI MATERIALI 
+1201,1201,other,Y,account.data_account_type_asset,12,fabbricati 
+1202,1202,other,Y,account.data_account_type_asset,12,impianti e macchinari 
+1204,1204,other,Y,account.data_account_type_asset,12,attrezzature commerciali 
+1205,1205,other,Y,account.data_account_type_asset,12,macchine d'ufficio 
+1206,1206,other,Y,account.data_account_type_asset,12,arredamento 
+1207,1207,other,Y,account.data_account_type_asset,12,automezzi 
+1208,1208,other,Y,account.data_account_type_asset,12,imballaggi durevoli 
+1211,1211,other,Y,account.data_account_type_asset,12,fondo ammortamento fabbricati 
+1212,1212,other,Y,account.data_account_type_asset,12,fondo ammortamento impianti e macchinari 
+1214,1214,other,Y,account.data_account_type_asset,12,fondo ammortamento attrezzature commerciali 
+1215,1215,other,Y,account.data_account_type_asset,12,fondo ammortamento macchine d'ufficio 
+1216,1216,other,Y,account.data_account_type_asset,12,fondo ammortamento arredamento 
+1217,1217,other,Y,account.data_account_type_asset,12,fondo ammortamento automezzi 
+1218,1218,other,Y,account.data_account_type_asset,12,fondo ammortamento imballaggi durevoli 
+1220,1220,other,Y,account.data_account_type_asset,12,fornitori immobilizzazioni c/acconti 
+13,13,view,Y,account.data_account_type_view,1,IMMOBILIZZAZIONI FINANZIARIE 
+1301,1301,other,Y,account.data_account_type_asset,13,mutui attivi 
+14,14,view,Y,account.data_account_type_view,1,RIMANENZE 
+1401,1401,other,Y,account.data_account_type_asset,14,materie di consumo 
+140173,140173,other,N,account.data_account_type_asset,14,Lav. in corso Rainova ID 37249
+140174,140174,other,N,account.data_account_type_asset,14,Lav. in corso EUM 4 ALL-ACTIVA ID 37249
+140181,140181,other,N,account.data_account_type_asset,14,Lav. in corso EMPLOY ID 37654
+140182,140182,other,N,account.data_account_type_asset,14,Lav. in corso RESILIENCE ID 36273
+140184,140184,other,N,account.data_account_type_asset,14,Lav. in corso MOVE ID 42815
+140185,140185,other,N,account.data_account_type_asset,14,Lav. in corso M TRANSITION ID 39494
+1404,1404,other,Y,account.data_account_type_asset,14,merci 
+1410,1410,other,Y,account.data_account_type_asset,14,fornitori c/acconti 
+15,15,view,Y,account.data_account_type_view,1,CREDITI COMMERCIALI 
+1501,1501,receivable,Y,account.data_account_type_receivable,15,crediti v/clienti CSCS srl
+15010042196,15010042196,receivable,N,account.data_account_type_receivable,15,Crediti v/Skydsl
+15010043239,15010043239,receivable,N,account.data_account_type_receivable,15,Crediti v/LVMH
+150100 ROC Ter AA,150100 ROC Ter AA,receivable,N,account.data_account_type_receivable,15,crediti vs/ROC Ter AA
+150109,150109,receivable,N,account.data_account_type_receivable,15,crediti v/terzi per pagamenti errati
+150110,150110,receivable,N,account.data_account_type_receivable,15,crediti diversi per fatture da ricevere
+150112,150112,receivable,N,account.data_account_type_receivable,15,altri crediti
+150117,150117,receivable,N,account.data_account_type_receivable,15,crediti v/c studi per incasso o pagamento non dovuto
+1502,1502,other,Y,account.data_account_type_asset,15,crediti commerciali diversi 
+150217,150217,other,N,account.data_account_type_asset,15,crediti v/c studi per incasso o pagamento non dovuti
+1503,1503,receivable,Y,account.data_account_type_receivable,15,clienti c/spese anticipate 
+1505,1505,other,Y,account.data_account_type_asset,15,cambiali attive 
+1506,1506,other,Y,account.data_account_type_asset,15,cambiali allo sconto 
+1507,1507,other,Y,account.data_account_type_asset,15,cambiali all'incasso 
+1509,1509,other,Y,account.data_account_type_asset,15,fatture da emettere 
+1510,1510,other,Y,account.data_account_type_asset,15,crediti insoluti 
+1510042196,1510042196,receivable,N,account.data_account_type_receivable,15,Crediti v/Skydsl
+1511,1511,other,Y,account.data_account_type_asset,15,cambiali insolute 
+1531,1531,other,Y,account.data_account_type_asset,15,crediti da liquidare 
+1540,1540,other,Y,account.data_account_type_asset,15,fondo svalutazione crediti 
+1541,1541,other,Y,account.data_account_type_asset,15,fondo rischi su crediti 
+16,16,view,Y,account.data_account_type_view,1,CREDITI DIVERSI 
+1601,1601,other,Y,account.data_account_type_asset,16,IVA ns credito
+160104,160104,other,N,account.data_account_type_payable,,Iva su corrispettivi
+1602,1602,other,Y,account.data_account_type_asset,16,IVA c/acconto 
+1605,1605,other,Y,account.data_account_type_asset,16,crediti per IVA 
+160600 ,160600 ,other,N,account.data_account_type_receivable,16,Iva Indetraibile 
+1607,1607,other,Y,account.data_account_type_asset,16,imposte c/acconto 
+160701,160701,receivable,N,account.data_account_type_receivable,16,erario c/acconti IRAP
+160702,160702,receivable,N,account.data_account_type_receivable,16,erario c/acconto IRES
+160703,160703,receivable,N,account.data_account_type_receivable,16,credito da compensare IRAP
+160704,160704,receivable,N,account.data_account_type_receivable,16,Credito da Compensare IRES
+160705,160705,receivable,N,account.data_account_type_receivable,16,Credito Inail
+160706,160706,other,N,account.data_account_type_receivable,16,Erario c/ritenute su Interessi Attivi
+160707,160707,receivable,N,account.data_account_type_receivable,16,Erario c/crediti a rimborso
+1608,1608,other,Y,account.data_account_type_asset,16,crediti per imposte 
+1609,1609,other,Y,account.data_account_type_asset,16,crediti per ritenute subite 
+1610,1610,other,Y,account.data_account_type_asset,16,crediti per cauzioni 
+161001,161001,other,N,account.data_account_type_receivable,16,Depositi cauzionali enel
+161003,161003,other,N,account.data_account_type_receivable,16,Depositi cauzionali su affitti
+161005,161005,other,N,account.data_account_type_receivable,16,Depositi cauzionali vari
+161007,161007,other,N,account.data_account_type_receivable,16,Depositi cauzionali Publiacqua
+1620,1620,other,Y,account.data_account_type_asset,16,personale c/acconti 
+1630,1630,other,Y,account.data_account_type_asset,16,crediti v/istituti previdenziali 
+1640,1640,receivable,Y,account.data_account_type_receivable,16,debitori diversi 
+18,18,view,Y,account.data_account_type_view,1,DISPONIBILITÀ LIQUIDE 
+180001,180001,liquidity,N,account.data_account_type_cash,18,Contante
+180002,180002,liquidity,N,account.data_account_type_bank,18,Banca
+180003,180003,liquidity,N,account.data_account_type_bank,18,Banca MPS c/c1577073 CServizi
+180004,180004,liquidity,N,account.data_account_type_bank,18,Banca CRPL c/c 710 CServizi
+180005,180005,liquidity,N,account.data_account_type_bank,18,Banca anticipi CRPL c/c 435 CServizi
+1801,1801,liquidity,Y,account.data_account_type_bank,18,banche c/c 
+180203,180203,liquidity,N,account.data_account_type_cash,18,Cassa anticipi dip. + collaboratori
+180204,180204,liquidity,N,account.data_account_type_cash,18,Fondo cassa Bar Melos
+180205,180205,liquidity,N,account.data_account_type_cash,18,Ticket Restaurant
+180245,180245,liquidity,N,account.data_account_type_cash,18,Assegni voucher INPS lavoro accessorio
+1810,1810,liquidity,Y,account.data_account_type_bank,18,c/c postali 
+1820,1820,liquidity,Y,account.data_account_type_cash,18,denaro in cassa 
+1821,1821,liquidity,Y,account.data_account_type_cash,18,assegni in cassa
+1822,1822,liquidity,Y,account.data_account_type_cash,18,valori bollati 
+183001,183001,liquidity,N,account.data_account_type_bank,18,Caript c/c 710
+183004,183004,liquidity,N,account.data_account_type_bank,18,Banca Toscana c/c 15770/13 CServizi
+183008,183008,liquidity,N,account.data_account_type_bank,18,Banca Etruria c/c 3947 CServizi
+183009,183009,liquidity,N,account.data_account_type_bank,18,Banca Etruria anticipi contratti CServizi
+183010,183010,liquidity,N,account.data_account_type_bank,18,Banca Etruria anticipi fatture CServizi
+183011,183011,liquidity,N,account.data_account_type_bank,18,Banca Etruria sovvenzioni attive CServizi
+183029,183029,liquidity,N,account.data_account_type_bank,18,Carta ricaricabile Bpel
+19,19,view,Y,account.data_account_type_view,1,RATEI E RISCONTI ATTIVI 
+1901,1901,other,Y,account.data_account_type_asset,19,ratei attivi 
+1902,1902,other,Y,account.data_account_type_asset,19,risconti attivi 
+2,2,view,Y,account.data_account_type_view,0,PASSIVO 
+20,20,view,Y,account.data_account_type_view,2,PATRIMONIO NETTO 
+2101,2101,other,Y,account.data_account_type_liability,20,patrimonio netto 
+2102,2102,other,Y,account.data_account_type_liability,20,utile d'esercizio 
+210210,210210,other,N,account.conf_account_type_equity,20,riserva legale
+210220,210220,other,N,account.conf_account_type_equity,20,riserva straordinaria
+2103,2103,other,Y,account.data_account_type_liability,20,perdita d'esercizio 
+2104,2104,other,Y,account.data_account_type_liability,20,prelevamenti extra gestione 
+2105,2105,other,Y,account.data_account_type_liability,20,Ritenute Professionisti 20%
+22,22,view,Y,account.data_account_type_view,2,FONDI PER RISCHI E ONERI 
+2201,2201,other,Y,account.data_account_type_liability,22,fondo per imposte 
+2202,2202,other,N,account.data_account_type_liability,22,fondo previdenza dipendenti
+2204,2204,other,Y,account.data_account_type_liability,22,fondo responsabilità civile 
+2205,2205,other,Y,account.data_account_type_liability,22,fondo spese future 
+2206,2206,other,N,account.data_account_type_liability,22,fondo ammortamento svalutazione crediti
+2211,2211,other,Y,account.data_account_type_liability,22,fondo manutenzioni programmate 
+23,23,view,Y,account.data_account_type_view,2,TRATTAMENTO FINE RAPPORTO DI LAVORO 
+2301,2301,other,Y,account.data_account_type_liability,23,debiti per TFRL 
+230101,230101,other,N,account.data_account_type_liability,23,debiti per tfr dipendenti
+230102,230102,other,N,account.data_account_type_liability,23,debiti per tfr amministratore
+24,24,view,Y,account.data_account_type_view,2,DEBITI FINANZIARI 
+2410,2410,other,Y,account.data_account_type_liability,24,mutui passivi 
+2411,2411,other,Y,account.data_account_type_liability,24,banche c/sovvenzioni 
+241101,241101,other,N,account.data_account_type_payable,24,BPEL c sovvenzioni 382176
+2420,2420,other,Y,account.data_account_type_liability,24,banche c/c passivi 
+2421,2421,other,Y,account.data_account_type_liability,24,banche c/RIBA all'incasso 
+2422,2422,other,Y,account.data_account_type_liability,24,banche c/cambiali all'incasso 
+2423,2423,other,Y,account.data_account_type_liability,24,banche c/anticipi su fatture 
+242301,242301,other,N,account.data_account_type_payable,24,BPEL c anticipi 382100
+242302,242302,other,N,account.data_account_type_payable,24,BPEL  c anticipo fatture estero
+242303,242303,other,N,account.data_account_type_payable,24,caript c anticipi c/c 1000/435
+242304,242304,other,N,account.data_account_type_payable,24,caript c anticipi fatture estero
+2440,2440,other,Y,account.data_account_type_liability,24,debiti v/altri finanziatori 
+244010,244010,other,N,account.data_account_type_liability,24,debito vs/partecipate
+244020,244020,other,N,account.data_account_type_liability,24,debito finanziario vs/cscs associaz
+244030,244030,other,N,account.data_account_type_payable,24,assegni soci non rientrati
+25,25,view,Y,account.data_account_type_view,2,DEBITI COMMERCIALI 
+2501,2501,payable,Y,account.data_account_type_payable,25,debiti verso fornitori 
+2501001,2501001,payable,N,account.data_account_type_payable,25,Debiti v/Kisha Lacit
+2501001058,2501001058,payable,N,account.data_account_type_payable,25,Debiti v/Mister Wizard
+2501001069,2501001069,payable,N,account.data_account_type_payable,25,debiti v/Telecom
+25010010698,25010010698,payable,N,account.data_account_type_payable,25,debiti v/Siae
+25010012790 ,25010012790 ,payable,N,account.data_account_type_payable,25,debiti v/Easy Nolo 
+25010013969,25010013969,payable,N,account.data_account_type_payable,25,debiti v/Publiacqua
+25010013974,25010013974,payable,N,account.data_account_type_payable,25,DEBITI V/H3G
+25010013994,25010013994,payable,N,account.data_account_type_payable,25,DEBITI V/SUPERMERCATO UNIVERSO SRL
+25010014524,25010014524,payable,N,account.data_account_type_payable,25,Debiti v/Esselunga
+25010014668,25010014668,payable,N,account.data_account_type_payable,25,Debiti v/Dhl
+2501001527,2501001527,payable,N,account.data_account_type_payable,25,DEBITI v/Unicoop Firenze
+25010020645,25010020645,payable,N,account.data_account_type_payable,25,Debiti v/Ikea
+25010022741,25010022741,payable,N,account.data_account_type_payable,25,debiti v/Carradori
+25010023773,25010023773,payable,N,account.data_account_type_payable,25,debiti v/ Bar Zagara
+25010035030,25010035030,payable,N,account.data_account_type_payable,25,Debiti v/Forno Citera
+25010035118,25010035118,payable,N,account.data_account_type_payable,25,Debiti v/Socialeinrete
+25010035381,25010035381,payable,N,account.data_account_type_payable,25,debiti v/Enel Energia Spa
+25010035382,25010035382,payable,N,account.data_account_type_payable,25,Debiti v/Enel Servizio Elettrico
+25010037805,25010037805,payable,N,account.data_account_type_payable,25,debiti v/Zona Market
+25010038183,25010038183,payable,N,account.data_account_type_payable,25,Debiti v/Nincheri e Gori
+25010038840,25010038840,payable,N,account.data_account_type_payable,25,250100 debiti v/Clouditalia
+25010039173,25010039173,payable,N,account.data_account_type_payable,25,Debiti v/Pistoia Tecnosistemi
+25010039310,25010039310,payable,N,account.data_account_type_payable,25,Debiti v/Eni spa
+25010039360,25010039360,payable,N,account.data_account_type_payable,25,debiti v/Fastweb
+25010039570,25010039570,payable,N,account.data_account_type_payable,25,debiti v/Centro Cartucce di Cotoia A.
+25010042196,25010042196,payable,N,account.data_account_type_payable,25,Debiti v/SkyDSL
+25010042200,25010042200,payable,N,account.data_account_type_payable,25,debiti v/Lenzi di Lenzi Daniele
+25010042606,25010042606,payable,N,account.data_account_type_payable,25,debiti v/Alitalia
+2501004560 ,2501004560 ,payable,N,account.data_account_type_payable,25,debiti v/Orlandini & Associati Srl
+2501004880,2501004880,payable,N,account.data_account_type_payable,25,Debiti v/Degl'Innocenti Emiliano
+250100801 ,250100801 ,payable,N,account.data_account_type_payable,,debiti v/ferramenta Crisonà Massimo  
+250100819,250100819,payable,N,account.data_account_type_payable,25, debiti vs/TNT
+2502,2502,other,N,account.data_account_type_payable,25,debiti vs/cstudi 
+2503,2503,other,Y,account.data_account_type_liability,25,cambiali passive 
+2520,2520,other,Y,account.data_account_type_liability,25,fatture da ricevere 
+2521,2521,other,Y,account.data_account_type_liability,25,debiti da liquidare 
+2530,2530,payable,Y,account.data_account_type_payable,25,clienti c/acconti 
+253060,253060,other,N,account.data_account_type_payable,25, Acconti EUM 4 ALL 37249 ACTIVA
+253061,253061,other,N,account.data_account_type_payable,25, Acconti RAINOVA ID 36968
+253067,253067,other,N,account.data_account_type_payable,25, Acconti RESILIENCE id 36273
+253068,253068,other,N,account.data_account_type_payable,25, Acconti Employ ID 37654
+26,26,view,Y,account.data_account_type_view,2,DEBITI DIVERSI 
+2601,2601,other,Y,account.data_account_type_liability,26,IVA n/debito 
+260101,260101,other,N,account.data_account_type_liability,26,iva ns debito corrispettivi melos
+2602,2602,payable,Y,account.data_account_type_payable,26,debiti per ritenute da versare 
+26050,26050,other,N,account.data_account_type_liability,26,erario c/ritenute passive
+2605,2605,payable,Y,account.data_account_type_payable,26,erario c/IVA 
+260501,260501,other,Y,account.data_account_type_liability,26,erario c/ritenute passive
+260502,260502,other,N,account.data_account_type_liability,26,erario c/imposta IRAP
+260503,260503,other,N,account.data_account_type_liability,26,Erario c/imposta IRES
+260504,260504,other,N,account.data_account_type_liability,26,Erario c/ritenute su professionisti
+260505,260505,other,N,account.data_account_type_payable,26,debiti v/Fondo Est
+260508,260508,other,N,account.data_account_type_liability,26,rivalutazione tfr 11%
+2606,2606,other,Y,account.data_account_type_liability,26,debiti per imposte 
+2619,2619,other,Y,account.data_account_type_liability,26,debiti per cauzioni 
+2620,2620,other,Y,account.data_account_type_liability,26,personale c/retribuzioni 
+262010,262010,other,N,account.data_account_type_liability,2,collaboratori c/retribuzioni
+262030,262030,other,N,account.data_account_type_liability,26,debiti per rimborsi spesa
+2621,2621,other,Y,account.data_account_type_liability,26,personale c/liquidazioni 
+2622,2622,other,Y,account.data_account_type_liability,26,clienti c/cessione 
+2630,2630,other,Y,account.data_account_type_liability,26,debiti v/istituti previdenziali 
+263001,263001,other,N,account.data_account_type_liability,26,debiti v/inps
+263002,263002,other,N,account.data_account_type_liability,26,debiti c/inail
+2640,2640,payable,Y,account.data_account_type_payable,26,creditori diversi 
+265060,265060,other,N,account.data_account_type_liability,26,Anticipi EUM 4 ALL 37249 ACTIVA
+265061,265061,other,N,account.data_account_type_liability,26,Anticipi RAINOVA ID 36968
+265067,265067,other,N,account.data_account_type_liability,26,Anticipi RESILIENCE id 36273
+265068,265068,other,N,account.data_account_type_liability,26,Anticipi Employ ID 37654
+27,27,view,Y,account.data_account_type_view,2,RATEI E RISCONTI PASSIVI 
+2701,2701,other,Y,account.data_account_type_liability,27,ratei passivi 
+2702,2702,other,Y,account.data_account_type_liability,27,risconti passivi 
+28,28,view,Y,account.data_account_type_view,2,CONTI TRANSITORI E DIVERSI 
+2801,2801,other,Y,account.data_account_type_liability,28,bilancio di apertura 
+2802,2802,other,Y,account.data_account_type_liability,28,bilancio di chiusura 
+2810,2810,other,Y,account.data_account_type_liability,28,IVA c/liquidazioni 
+2811,2811,other,Y,account.data_account_type_liability,28,istituti previdenziali 
+2820,2820,other,Y,account.data_account_type_liability,28,banca ... c/c 
+2821,2821,other,Y,account.data_account_type_liability,28,banca ... c/c 
+2822,2822,other,Y,account.data_account_type_liability,28,banca ... c/c 
+29,29,view,Y,account.data_account_type_view,2,CONTI DEI SISTEMI SUPPLEMENTARI 
+2901,2901,other,Y,account.data_account_type_liability,29,beni di terzi 
+2902,2902,other,Y,account.data_account_type_liability,29,depositanti beni 
+2911,2911,other,Y,account.data_account_type_liability,29,merci da ricevere 
+2912,2912,other,Y,account.data_account_type_liability,29,fornitori c/impegni 
+2913,2913,other,Y,account.data_account_type_liability,29,impegni per beni in leasing 
+2914,2914,other,Y,account.data_account_type_liability,29,creditori c/leasing 
+2916,2916,other,Y,account.data_account_type_liability,29,clienti c/impegni 
+2917,2917,other,Y,account.data_account_type_liability,29,merci da consegnare 
+2921,2921,other,Y,account.data_account_type_liability,29,rischi per effetti scontati 
+2922,2922,other,Y,account.data_account_type_liability,29,banche c/effetti scontati 
+2926,2926,other,Y,account.data_account_type_liability,29,rischi per fideiussioni 
+2927,2927,other,Y,account.data_account_type_liability,29,creditori per fideiussioni 
+2931,2931,other,Y,account.data_account_type_liability,29,rischi per avalli 
+2932,2932,other,Y,account.data_account_type_liability,29,creditori per avalli 
+3,3,view,Y,account.data_account_type_view,0,VALORE DELLA PRODUZIONE 
+31,31,view,Y,account.data_account_type_view,3,VENDITE E PRESTAZIONI 
+3101,3101,other,Y,account.data_account_type_income,31,prestazioni c/vendite 
+310101,310101,other,N,account.data_account_type_income,31,assistenza tecnica c/vendite
+310102,310102,other,N,account.data_account_type_income,31,IMY language and Cultural Course c/vendite
+310103,310103,other,N,account.data_account_type_income,31,ricavi ostello Michelina
+310104,310104,other,N,account.data_account_type_income,31,corrispettivi Melos
+310105,310105,other,N,account.data_account_type_income,31,ricavi Move id 42815
+310106,310106,other,N,account.data_account_type_income,31,ricavi Manage id 22630
+310107,310107,other,N,account.data_account_type_income,31,ricavi Regione Sardegna id 430..
+310108,310108,other,N,account.data_account_type_income,31,Ricavi Autofatture Skydsl
+310109,310109,other,N,account.data_account_type_income,31,Ricavi Autofatture CServizi
+310110,310110,other,N,account.data_account_type_income,31,IMY Accommodation c/vendite
+310120,310120,other,N,account.data_account_type_income,31,IMY transfer c/vendite
+310121,310121,other,N,account.data_account_type_income,31,IMY commissioni transfer c/vendite
+310122,310122,other,N,account.data_account_type_income,31,IMY commissioni vitto c/vendite
+310123,310123,other,N,account.data_account_type_income,31,IMY commissioni alloggio c/vendite
+310130,310130,other,N,account.data_account_type_income,31,IMI work placement c/vendite
+310140,310140,other,N,account.data_account_type_income,31,IMY work placement Insurance
+310150,310150,other,N,account.data_account_type_income,31,IMY Mobility Full Package
+3103,3103,other,Y,account.data_account_type_income,31,rimborsi spese di vendita 
+310301,310301,other,N,account.data_account_type_income,31,rimborsi spese trasporto
+3104,3104,other,Y,account.data_account_type_receivable,31,IMY servizi c/vendite iva 22%
+3110,3110,other,Y,account.data_account_type_income,31,resi su vendite 
+3111,3111,other,Y,account.data_account_type_income,31,ribassi e abbuoni passivi 
+3112,3112,other,Y,account.data_account_type_income,31,premi su vendite 
+32,32,view,Y,account.data_account_type_view,3,RICAVI E PROVENTI DIVERSI 
+3201,3201,other,Y,account.data_account_type_income,32,fitti attivi 
+3202,3202,other,Y,account.data_account_type_income,32,proventi vari 
+3210,3210,other,Y,account.data_account_type_income,32,arrotondamenti attivi 
+3220,3220,other,Y,account.data_account_type_income,32,plusvalenze ordinarie diverse 
+3230,3230,other,Y,account.data_account_type_income,32,sopravvenienze attive ordinarie diverse 
+3240,3240,other,Y,account.data_account_type_income,32,insussistenze attive ordinarie diverse 
+4,4,view,Y,account.data_account_type_view,0,COSTI 
+41,41,view,Y,account.data_account_type_view,4,COSTI PER BENI/SERVIZI VENDUTI 
+4101,4101,other,Y,account.data_account_type_expense,41,beni e servizi c/acquisti C Servizi
+4102,4102,other,Y,account.data_account_type_expense,41,beni/servizi per manutenzioni servizi venduti
+410210,410210,other,N,account.data_account_type_expense,41,materiale di consumo c/acquisto alloggio
+410220,410220,other,N,account.data_account_type_expense,41,materiale c/acquisti formazione professionale
+410230,410230,other,N,account.data_account_type_expense,41,materiale di consumo c/acquisti ristorazione
+4103,4103,other,N,account.data_account_type_expense,41,acquisto beni inf a € 516.46
+4105,4105,other,Y,account.data_account_type_expense,41,merci c/apporti 
+4110,4110,other,Y,account.data_account_type_expense,41,resi su acquisti 
+4111,4111,other,Y,account.data_account_type_expense,41,ribassi e abbuoni attivi 
+4112,4112,other,Y,account.data_account_type_expense,41,premi su acquisti 
+4121,4121,other,Y,account.data_account_type_expense,41,merci c/esistenze iniziali 
+412134,412134,other,N,account.data_account_type_expense,41,progetti c/esistenze iniziali Rainova id 36968
+412135,412135,other,N,account.data_account_type_expense,41,progetti c/esistenze iniziali Eum 4 all activa id 37249
+412142,412142,other,N,account.data_account_type_expense,41,progetti c/esistenze iniziali Employ id 37654
+412143,412143,other,N,account.data_account_type_expense,41,progetti c/esistenze iniziali Resilience id 36273
+412145,412145,other,N,account.data_account_type_expense,41,progetti c/esistenze iniziali Move id 42815
+412146,412146,other,N,account.data_account_type_expense,41,progetti c/esistenze iniziali M Transition id 39494
+4122,4122,other,Y,account.data_account_type_expense,41,materie di consumo c/esistenze iniziali 
+4131,4131,other,Y,account.data_account_type_expense,41,merci c/rimanenze finali 
+4132,4132,other,Y,account.data_account_type_expense,41,materie di consumo c/rimanenze finali 
+42,42,view,Y,account.data_account_type_view,4,COSTI PER SERVIZI
+4201,4201,other,Y,account.data_account_type_expense,42,costi di trasporto 
+420101,420101,other,N,account.data_account_type_expense,42,spese di viaggio
+420110,420110,other,N,account.data_account_type_expense,42,autobus e taxi
+4202,4202,other,Y,account.data_account_type_expense,42,costi per energia 
+4203,4203,other,Y,account.data_account_type_expense,42,costi di pubblicità 
+4204,4204,other,Y,account.data_account_type_expense,42,costi di consulenze 
+420401,420401,other,N,account.data_account_type_expense,42,compensi a professionisti
+420402,420402,other,N,account.data_account_type_expense,42,spese consulenze di terzi
+420403,420403,other,N,account.data_account_type_expense,42,compensi a professionisti afferenti attività
+420404,420404,other,N,account.data_account_type_expense,42,spese consulenti elaborazione dati
+4205,4205,other,Y,account.data_account_type_expense,42,costi postali 
+420501,420501,other,N,account.data_account_type_expense,42,canone assistenza
+420502,420502,other,N,account.data_account_type_expense,42,"cancelleria, riviste, stampe"
+420503,420503,other,N,account.data_account_type_expense,42,spese vidimazione libri sociali
+420504,420504,other,N,account.data_account_type_expense,42,spese quote associative
+420505,420505,other,N,account.data_account_type_expense,42,spese varie
+420506,420506,other,N,account.data_account_type_expense,42,spese carburante
+420507,420507,other,N,account.data_account_type_expense,42,parcheggi autovetture
+420508,420508,other,N,account.data_account_type_bank,42,alberghi e ristoranti
+420509,420509,other,N,account.data_account_type_expense,42,alberghi e ristoranti di rappresentanza
+420510,420510,other,N,account.data_account_type_expense,42,altre spese di rappresentanza imp<50€
+420511,420511,other,N,account.data_account_type_expense,42,spese Siae
+420512,420512,other,N,account.data_account_type_expense,42,rimborsi spese a clienti
+420513,420513,other,N,account.data_account_type_expense,42,rimborsi spese a piè lista
+420514,420514,other,N,account.data_account_type_expense,42,Canoni servizi
+420515,420515,other,N,account.data_account_type_expense,42,Valori Bollati
+420516,420516,other,N,account.data_account_type_expense,42,Spese di rappresentanza
+4206,4206,view,Y,account.data_account_type_expense,42,costi telefonici 
+420601,420601,other,N,account.data_account_type_expense,42,spese telefoniche
+420602,420602,other,N,account.data_account_type_expense,42,spese telefono cellulare
+420603,420603,other,N,account.data_account_type_expense,42,altre spese telefoniche
+420604,420604,other,N,account.data_account_type_expense,42,Spese telefono cellulare ded.100%
+420605,420605,other,N,account.data_account_type_expense,25,spese telefoniche ded 100%
+420606,420606,other,N,account.data_account_type_expense,42,Spese telefoniche ded. 80%
+4207,4207,other,Y,account.data_account_type_expense,42,costi di assicurazione 
+4208,4208,other,Y,account.data_account_type_expense,42,costi di vigilanza 
+4209,4209,other,Y,account.data_account_type_expense,42,costi manutenzioni immobili
+420901,420901,other,N,account.data_account_type_expense,42,spese energia elettrica
+420902,420902,other,N,account.data_account_type_expense,42,spese gas metano
+420903,420903,other,N,account.data_account_type_expense,42,spese acqua
+420904,420904,other,N,account.data_account_type_expense,42,spese per pulizie
+420905,420905,other,N,account.data_account_type_expense,42,spese IMU imposta comunale
+4210,4210,other,Y,account.data_account_type_expense,42,costi di esercizio automezzi 
+4211,4211,other,Y,account.data_account_type_expense,42,costi di manutenzione e riparazioni
+4212,4212,other,Y,account.data_account_type_expense,42,provvigioni passive 
+4213,4213,other,Y,account.data_account_type_expense,42,spese di incasso 
+43,43,view,Y,account.data_account_type_view,4,COSTI PER GODIMENTO BENI DI TERZI 
+4301,4301,other,Y,account.data_account_type_expense,43,fitti passivi 
+4302,4302,other,Y,account.data_account_type_expense,43,canoni di leasing 
+4303,4303,other,N,account.data_account_type_expense,43,noleggio
+430301,430301,other,N,account.data_account_type_expense,43,spese per noleggio biancheria
+430302,430302,other,N,account.data_account_type_expense,43,costi di manutenzione e riparazioni su beni in locaz
+44,44,view,Y,account.data_account_type_view,4,COSTI PER IL PERSONALE 
+4401,4401,other,Y,account.data_account_type_expense,44,salari e stipendi 
+4402,4402,other,Y,account.data_account_type_expense,44,oneri sociali 
+440201,440201,other,N,account.data_account_type_expense,44,contributi inps
+440202,440202,other,N,account.data_account_type_expense,44,contributi inail
+440203,440203,other,N,account.data_account_type_expense,44,Fondo Est
+4403,4403,other,Y,account.data_account_type_expense,44,TFRL 
+440301,440301,other,N,account.data_account_type_expense,44,TFRL dipendenti
+440302,440302,other,N,account.data_account_type_expense,44,TFRL amministratori
+4404,4404,other,Y,account.data_account_type_expense,44,altri costi per il personale 
+440401,440401,other,N,account.data_account_type_expense,44,compensi per prestazioni occasionali
+440402,440402,other,N,account.data_account_type_expense,44,collaborazioni coordinate e continuative
+440403,440403,other,N,account.data_account_type_expense,44,compensi amministratore
+440404,440404,other,N,account.data_account_type_expense,44,prestazioni di lavoro occasionale accessorio
+45,45,view,Y,account.data_account_type_view,4,AMMORTAMENTI IMMOBILIZZAZIONI IMMATERIALI 
+4501,4501,other,Y,account.data_account_type_expense,45,ammortamento costi di impianto 
+4506,4506,other,Y,account.data_account_type_expense,45,ammortamento software 
+4508,4508,other,Y,account.data_account_type_expense,45,ammortamento avviamento 
+46,46,view,Y,account.data_account_type_view,4,AMMORTAMENTI IMMOBILIZZAZIONI MATERIALI 
+4601,4601,other,Y,account.data_account_type_expense,46,ammortamento fabbricati 
+4602,4602,other,Y,account.data_account_type_expense,46,ammortamento impianti e macchinari 
+4604,4604,other,Y,account.data_account_type_expense,46,ammortamento attrezzature commerciali 
+4605,4605,other,Y,account.data_account_type_expense,46,ammortamento macchine d'ufficio 
+4606,4606,other,Y,account.data_account_type_expense,46,ammortamento arredamento 
+4607,4607,other,Y,account.data_account_type_expense,46,ammortamento automezzi 
+4608,4608,other,Y,account.data_account_type_expense,46,ammortamento imballaggi durevoli 
+47,47,view,Y,account.data_account_type_view,4,SVALUTAZIONI 
+4701,4701,other,Y,account.data_account_type_expense,47,svalutazioni immobilizzazioni immateriali 
+4702,4702,other,Y,account.data_account_type_expense,47,svalutazioni immobilizzazioni materiali 
+4706,4706,other,Y,account.data_account_type_expense,47,svalutazione crediti 
+48,48,view,Y,account.data_account_type_view,4,ACCANTONAMENTI 
+481,481,view,Y,account.data_account_type_view,48,ACCANTONAMENTI PER RISCHI 
+4814,4814,other,Y,account.data_account_type_expense,481,accantonamento per responsabilità civile 
+482,482,view,Y,account.data_account_type_view,48,ALTRI ACCANTONAMENTI 
+4821,4821,other,Y,account.data_account_type_expense,482,accantonamento per spese future 
+482300 srl,482300 srl,other,Y,account.data_account_type_expense,482,accantonamento per manutenzioni programmate 
+49,49,view,Y,account.data_account_type_view,4,ONERI DIVERSI 
+4901,4901,other,Y,account.data_account_type_expense,49,oneri fiscali diversi 
+490101,490101,other,N,account.data_account_type_expense,49,imposte e tasse - canone rai
+490102,490102,other,N,account.data_account_type_expense,49,penalità esattoriali
+490103,490103,other,N,account.data_account_type_expense,49,diritti camerali e tasse governative
+490104,490104,other,N,account.data_account_type_expense,,imposte varie deducibili
+4903,4903,other,Y,account.data_account_type_expense,49,oneri vari 
+490301,490301,other,N,account.data_account_type_expense,49,costi indeducibili
+490302,490302,other,N,account.data_account_type_expense,49,multe
+4905,4905,other,Y,account.data_account_type_expense,49,perdite su crediti 
+4910,4910,other,Y,account.data_account_type_expense,49,arrotondamenti passivi 
+4920,4920,other,Y,account.data_account_type_expense,49,minusvalenze ordinarie diverse 
+4930,4930,other,Y,account.data_account_type_expense,49,sopravvenienze passive ordinarie diverse 
+4940,4940,other,Y,account.data_account_type_expense,49,insussistenze passive ordinarie diverse 
+5,5,view,Y,account.data_account_type_view,0,PROVENTI E ONERI FINANZIARI 
+51,51,view,Y,account.data_account_type_view,5,PROVENTI FINANZIARI 
+5110,5110,other,Y,account.data_account_type_income,51,interessi attivi v/clienti 
+5115,5115,other,Y,account.data_account_type_income,51,interessi attivi bancari 
+5116,5116,other,Y,account.data_account_type_income,51,interessi attivi postali 
+5140,5140,other,Y,account.data_account_type_income,51,proventi finanziari diversi 
+52,52,view,Y,account.data_account_type_view,5,ONERI FINANZIARI 
+5201,5201,other,Y,account.data_account_type_expense,52,interessi passivi v/fornitori 
+520150,520150,other,N,account.data_account_type_expense,52,interessi passivi v/erario
+5202,5202,other,Y,account.data_account_type_expense,52,interessi passivi bancari 
+520201,520201,other,N,account.data_account_type_expense,52,Interessi bancari passivi su anticipi
+520202,520202,other,N,account.data_account_type_expense,52,interessi bancari passivi su c/c
+5203,5203,other,Y,account.data_account_type_expense,52,sconti passivi bancari 
+5210,5210,other,Y,account.data_account_type_expense,52,interessi passivi su mutui 
+5240,5240,other,Y,account.data_account_type_expense,52,oneri finanziari diversi 
+524001,524001,other,N,account.data_account_type_expense,52,oneri bancari per anticipi
+524002,524002,other,N,account.data_account_type_expense,52,oneri bancari per c/c
+7,7,view,Y,account.data_account_type_view,0,PROVENTI E ONERI STRAORDINARI 
+71,71,view,Y,account.data_account_type_view,7,PROVENTI STRAORDINARI 
+7101,7101,other,Y,account.data_account_type_income,71,plusvalenze straordinarie 
+7102,7102,other,Y,account.data_account_type_income,71,sopravvenienze attive straordinarie 
+7103,7103,other,Y,account.data_account_type_income,71,insussistenze attive straordinarie 
+72,72,view,Y,account.data_account_type_view,7,ONERI STRAORDINARI 
+7201,7201,other,Y,account.data_account_type_expense,72,minusvalenze straordinarie 
+7202,7202,other,Y,account.data_account_type_expense,72,sopravvenienze passive straordinarie 
+7203,7203,other,Y,account.data_account_type_expense,72,insussistenze passive straordinarie 
+720301,720301,other,N,account.data_account_type_expense,72,furti e ammanchi
+7204,7204,other,Y,account.data_account_type_expense,72,imposte esercizi precedenti 
+8,8,view,Y,account.data_account_type_view,0,IMPOSTE DELL'ESERCIZIO 
+8101,8101,other,Y,account.data_account_type_expense,8,imposte dell'esercizio 
+810101,810101,other,N,account.conf_account_type_tax,8,Irap dell'esercizio
+810102,810102,other,N,account.conf_account_type_tax,8,Ires dell'esercizio
+9,9,view,Y,account.data_account_type_view,0,CONTI DI RISULTATO 
+9101,9101,other,Y,account.data_account_type_expense,9,conto di risultato economico 
+9102,9102,other,Y,account.data_account_type_expense,9,stato patrimoniale
+amministratori c/competenze,amministratori c/competenze,other,N,account.data_account_type_liability,2,262020

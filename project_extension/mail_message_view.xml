@@ -1,0 +1,140 @@
+<?xml version="1.0"?>
+<openerp>
+    <data>
+        <record model="ir.ui.view" id="view_message_form_enhanced">
+            <field name="name">mail.message.form.enhanced</field>
+            <field name="model">mail.message</field>
+            <field name="inherit_id" ref="mail.view_message_form"/>
+            <field name="arch" type="xml">
+                <field name="subtype_id" position="after">
+                    <field name="id_papaer"/>
+                </field>
+                <field name="model" position="replace">
+                    <field name="model" invisible="1"/>
+                    <field name="model_selection" 
+                           on_change="onchange_model(model_selection)"/>
+                </field>
+                <field name="res_id" position="replace">
+                    <field name="res_id" invisible="1"/>
+                    <field name="sel_partner_id"
+                             attrs="{'invisible':[('model_selection','!=', 'partner')]}"
+                             on_change="onchange_sel_id(sel_partner_id)"/>
+                    <field name="sel_project_id"
+                             attrs="{'invisible':[('model_selection','!=','project')]}"
+                             on_change="onchange_sel_id(sel_project_id)"/>  
+                    <field name="sel_invoice_id"
+                             attrs="{'invisible':[('model_selection','!=','invoice'),
+                                                  ('model_selection','!=','invoice_c'),
+                                                  ('model_selection','!=','invoice_p')]}"
+                             on_change="onchange_sel_id(sel_invoice_id)"
+                             domain="[('state', '=', 'draft'),
+                                      ('type', '=', 'in_invoice'),
+                                      ('company_id', '=', 1)]"/>
+                    <field name="sel_lead_id"
+                             attrs="{'invisible':[('model_selection','!=','lead')]}"
+                             on_change="onchange_sel_id(sel_lead_id)"/>
+                    <field name="sel_order_id"
+                             attrs="{'invisible':[('model_selection','!=','order')]}"
+                             on_change="onchange_sel_id(sel_order_id)"/>
+                    <field name="sel_analytic_account_id"
+                             attrs="{'invisible':[('model_selection','!=','analytic_account')]}"
+                             on_change="onchange_sel_id(sel_analytic_account_id)"/>
+                    <field name="sel_voucher_id"
+                             attrs="{'invisible':[('model_selection','!=','voucher')]}"
+                             on_change="onchange_sel_id(sel_voucher_id)"/>
+                </field>
+                <field name="notified_partner_ids" position="after">
+                   <field name="security_level"/>
+                </field>
+                <field name="body" position="after">
+                   <field name="attachment_ids" colspan="4"/>
+                </field>
+            </field>
+        </record>
+        <record model="ir.ui.view" id="view_message_tree_enhanced">
+            <field name="name">mail.message.tree.enhanced</field>
+            <field name="model">mail.message</field>
+            <field name="inherit_id" ref="mail.view_message_tree"/>
+            <field name="arch" type="xml">
+                <field name="res_id" position="after">
+                      <field name="model_selection" invisible="1"/>
+                      <field name="sel_record_name" />
+<!--                      <field name="sel_partner_id" attrs="{'invisible':[('model_selection','!=', 'partner')]}" />-->
+<!--                      <field name="sel_project_id" attrs="{'invisible':[('model_selection','!=','project')]}" />-->
+<!--                      <field name="sel_invoice_id" attrs="{'invisible':[('model_selection','!=','invoice')]}" />-->
+<!--                      <field name="sel_lead_id" attrs="{'invisible':[('model_selection','!=','lead')]}" />-->
+<!--                      <field name="sel_order_id" attrs="{'invisible':[('model_selection','!=','order')]}"/>-->
+<!--                      <field name="sel_analytic_account_id" attrs="{'invisible':[('model_selection','!=','analytic_account')]}"/>-->
+                </field>
+            </field>
+        </record>
+        <record id="action_view_mail_message_manager1" model="ir.actions.act_window">
+            <field name="name">Messages</field>
+            <field name="res_model">mail.message</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="search_view_id" ref="mail.view_message_search"/>
+            <field name="domain">['|',('security_level','=',False),('security_level','in',['1'])]</field>
+        </record>
+        <record id="action_view_mail_message_manager2" model="ir.actions.act_window">
+            <field name="name">Messages</field>
+            <field name="res_model">mail.message</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="search_view_id" ref="mail.view_message_search"/>
+            <field name="domain">['|',('security_level','=',False),('security_level','in',['1','2'])]</field>
+        </record>
+        <record id="action_view_mail_message_manager3" model="ir.actions.act_window">
+            <field name="name">Messages</field>
+            <field name="res_model">mail.message</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="search_view_id" ref="mail.view_message_search"/>
+            <field name="domain">['|',('security_level','=',False),('security_level','in',['1','2','3'])]</field>
+        </record>
+
+        <!-- invoice -->
+        <!--
+        <record id="invoice_supplier_form_mail" model="ir.ui.view">
+            <field name="name">account.invoice.supplier.form</field>
+            <field name="model">account.invoice</field>
+            <field name="inherit_id" ref="account.invoice_supplier_form"/>
+            <field name="arch" type="xml">
+        </record>
+        -->
+        <record id="action_invoice_tree1_mail" model="ir.actions.act_window">
+            <field name="name">Supplier invoices</field>
+            <field name="res_model">account.invoice</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form,calendar,graph</field>
+            <field eval="False" name="view_id"/>
+            <field name="domain">[('type','=','in_invoice')]</field>
+            <field name="context">{'default_type':'in_invoice', 'type':'in_invoice', 'journal_type': 'purchase'}</field>
+            <field name="search_view_id" ref="account.view_account_invoice_filter"/>
+        </record>
+
+        <!--
+        <record id="invoice_form_mail" model="ir.ui.view">
+            <field name="name">account.invoice.form</field>
+            <field name="model">account.invoice</field>
+            <field name="inherit_id" ref="account.invoice_form"/>
+            <field name="arch" type="xml">
+        </record>
+        -->
+        <record id="action_invoice_tree2_mail" model="ir.actions.act_window">
+            <field name="name">Customer invoices</field>
+            <field name="res_model">account.invoice</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form,calendar,graph</field>
+            <field eval="False" name="view_id"/>
+            <field name="domain">[('type','=','out_invoice')]</field>
+            <field name="context">{'default_type':'out_invoice', 'type':'out_invoice', 'journal_type': 'sale'}</field>
+            <field name="search_view_id" ref="account.view_account_invoice_filter"/>
+        </record>
+
+        <menuitem name="Messages" id="menu_mail_message_managers" parent="mail.mail_feeds_main" groups="group_msg_manager_1,group_msg_manager_2,group_msg_manager_3"/>
+        <menuitem name="Messages" id="menu_mail_message_manager1" parent="menu_mail_message_managers" action="action_view_mail_message_manager1" groups="group_msg_manager_1"/>
+        <menuitem name="Messages" id="menu_mail_message_manager2" parent="menu_mail_message_managers" action="action_view_mail_message_manager2" groups="group_msg_manager_2"/>
+        <menuitem name="Messages" id="menu_mail_message_manager3" parent="menu_mail_message_managers" action="action_view_mail_message_manager3" groups="group_msg_manager_3"/>
+    </data>
+</openerp>

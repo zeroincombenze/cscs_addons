@@ -1,0 +1,66 @@
+id,chart_template_id:id,ref_tax_sign,type_tax_use,child_depend,description,price_include,type,base_sign,tax_code_id:id,amount,base_code_id:id,account_paid_id:id,tax_sign,sequence,ref_base_sign,ref_base_code_id:id,parent_id:id,name,account_collected_id:id,ref_tax_code_id:id
+21v,l10n_it_chart_template_generic,-1,sale,N,21v,N,percent,1,template_IVD2I,0.21,template_IVD21I,,1,1,-1,template_IVD21I,,Iva al 21% (debito),,template_IVD21I
+21a,l10n_it_chart_template_generic,1,purchase,N,21a,N,percent,-1,template_IVC21I,0.21,template_IVC21I,,-1,2,1,template_IVC21I,,Iva al 21% (credito),,template_IVC21I
+20v,l10n_it_chart_template_generic,-1,sale,N,20v,N,percent,1,template_IVD20,0.2,template_IVD20I,,1,3,-1,template_IVD20I,,Iva al 20% (debito),,template_IVD20
+20a,l10n_it_chart_template_generic,1,purchase,N,20a,N,percent,-1,template_IVC20,0.2,template_IVC20I,,-1,4,1,template_IVC20I,,Iva al 20% (credito),,template_IVC20
+10v,l10n_it_chart_template_generic,-1,sale,N,10v,N,percent,1,template_IVD10I,0.1,template_IVD10I,,1,5,-1,template_IVD10I,,Iva al 10% (debito),,template_IVD10I
+10a,l10n_it_chart_template_generic,1,purchase,N,10a,N,percent,-1,template_IVC10,0.1,template_IVC10I,,-1,6,1,template_IVC10I,,Iva al 10% (credito),,template_IVC10
+10AO,l10n_it_chart_template_generic,1,purchase,Y,10AO,N,percent,-1,,0.1,template_IVC10Iind,,-1,7,1,template_IVC10Iind,,Iva al 10% indetraibile,,
+12v,l10n_it_chart_template_generic,-1,sale,N,12v,N,percent,1,template_IVD12I,0.12,template_IVD12I,,1,8,-1,template_IVD12I,,Iva 12% (debito),,template_IVD12I
+12a,l10n_it_chart_template_generic,1,purchase,N,12a,N,percent,-1,template_IVC12,0.12,template_IVC12I,,-1,9,1,template_IVC12I,,Iva 12% (credito),,template_IVC12
+2010,l10n_it_chart_template_generic,1,purchase,Y,2010,N,percent,-1,,0.2,template_IVC20Idet10,,-1,10,1,template_IVC20Idet10,,Iva al 20% detraibile 10%,,
+2015,l10n_it_chart_template_generic,1,purchase,Y,2015,N,percent,-1,,0.2,template_IVC20Idet15,,-1,11,1,template_IVC20Idet15,,Iva al 20% detraibile 15%,,
+2040,l10n_it_chart_template_generic,1,purchase,Y,2040',N,percent,-1,,0.2,template_IVC20Idet40,,-1,12,1,template_IVC20Idet40,,Iva al 20% detraibile 40%,,
+20AO,l10n_it_chart_template_generic,1,purchase,Y,20AO,N,percent,-1,,0.2,template_IVC20Iind,,-1,13,1,template_IVC20Iind,,Iva al 20% indetraibile,,
+20I5,l10n_it_chart_template_generic,1,purchase,Y,20I5,N,percent,-1,,0.2,template_IVC20Idet50,,-1,14,1,template_IVC20Idet50,,IVA al 20% detraibile al 50%,,
+22v,l10n_it_chart_template_generic,-1,sale,N,22v,N,percent,1,template_IVD2,0.02,template_IVD2I,,1,15,-1,template_IVD2I,,Iva 2% (debito),,template_IVD2
+22a,l10n_it_chart_template_generic,1,purchase,N,22a,N,percent,-1,template_IVC2,0.02,template_IVC2I,,-1,16,1,template_IVC2I,,Iva 2% (credito),,template_IVC2
+4v,l10n_it_chart_template_generic,-1,sale,N,4v,N,percent,1,template_IVD4,0.04,template_IVD4I,,1,17,-1,template_IVD4I,,Iva 4% (debito),,template_IVD4
+4a,l10n_it_chart_template_generic,1,purchase,N,4a,N,percent,-1,template_IVC4,0.04,template_IVC4I,,-1,18,1,template_IVC4I,,Iva 4% (credito),,template_IVC4
+4AO,l10n_it_chart_template_generic,1,purchase,Y,4AO,N,percent,-1,,0.04,template_IVC4Iind,,-1,19,1,template_IVC4Iind,,Iva al 4% indetraibile,,
+10I5,l10n_it_chart_template_generic,1,purchase,Y,10I5,N,percent,-1,,0.1,template_IVC10Idet50,,-1,20,1,template_IVC10Idet50,,IVA al 10% detraibile al 50%,,
+4I5,l10n_it_chart_template_generic,1,purchase,Y,4I5,N,percent,-1,,0.04,template_IVC4Idet50,,-1,21,1,template_IVC4Idet50,,IVA al 4% detraibile al 50%,,
+00v,l10n_it_chart_template_generic,-1,sale,N,00v,N,percent,1,template_IVD0,0,template_IVD0I,,1,22,-1,template_IVD0I,,Fuori Campo IVA (debito),,template_IVD0
+00art15v,l10n_it_chart_template_generic,-1,sale,N,00art15v,N,percent,1,template_IVDart15,0,template_IVDart15I,,1,22,-1,template_IVDart15I,,Imponibile Escluso Art.15 (debito),,template_IVDart15
+00art15a,l10n_it_chart_template_generic,1,purchase,N,00art15a,N,percent,-1,template_IVC0I,0,template_IVCart15I,,-1,23,1,template_IVCart15I,,Imponibile Escluso Art.15 (credito),,template_IVCart15
+00a,l10n_it_chart_template_generic,1,purchase,N,00a,N,percent,-1,template_IVC0,0,template_IVC0I,,-1,23,1,template_IVC0I,,Fuori Campo IVA (credito),,template_IVC0
+21v INC,l10n_it_chart_template_generic,-1,sale,N,21v INC,Y,percent,1,template_IVD21I,0.21,template_IVD21I,,1,24,-1,template_IVD21I,,Iva al 21% (debito) INC,,template_IVD20
+20v INC,l10n_it_chart_template_generic,-1,sale,N,20v INC,Y,percent,1,template_IVD20,0.2,template_IVD20I,,1,25,-1,template_IVD20I,,Iva al 20% (debito) INC,,template_IVD20 
+10v INC,l10n_it_chart_template_generic,-1,sale,N,10v INC,Y,percent,1,template_IVD10I,0.1,template_IVD10I,,1,26,-1,template_IVD10I,,Iva al 10% (debito) INC,,template_IVD10I
+12v INC,l10n_it_chart_template_generic,-1,sale,N,12v INC,Y,percent,1,template_IVD12I,0.12,template_IVD12I,,1,27,-1,template_IVD12I,,Iva 12% (debito) INC,,template_IVD12I
+22v INC,l10n_it_chart_template_generic,-1,sale,N,22v INC,Y,percent,1,template_IVD2,0.02,template_IVD2I,,1,28,-1,template_IVD2I,,Iva 2% (debito) INC,,template_IVD2
+4v INC,l10n_it_chart_template_generic,-1,sale,N,4v INC,Y,percent,1,template_IVD4,0.04,template_IVD4I,,1,29,-1,template_IVD4I,,Iva 4% (debito) INC,,template_IVD4
+00v INC,l10n_it_chart_template_generic,-1,sale,N,00v INC,Y,percent,1,template_IVD0,0,template_IVD0I,,1,30,-1,template_IVD0I,,Fuori Campo IVA (debito) INC,,template_IVD0
+2110,l10n_it_chart_template_generic,1,purchase,Y,2110,N,percent,-1,,0.21,template_IVC21Idet10,,-1,31,1,template_IVC21Idet10,,Iva al 21% detraibile 10%,,
+2115,l10n_it_chart_template_generic,1,purchase,Y,2115,N,percent,-1,,0.21,template_IVC21Idet15,,-1,32,1,template_IVC21Idet15,,Iva al 21% detraibile 15%,,
+2140,l10n_it_chart_template_generic,1,purchase,Y,2140,N,percent,-1,,0.21,template_IVC21Idet40,,-1,33,1,template_IVC21Idet40,,Iva al 21% detraibile 40%,,
+21AO,l10n_it_chart_template_generic,1,purchase,Y,21AO,N,percent,-1,,0.21,template_IVC21Iind,,-1,34,1,template_IVC21Iind,,Iva al 21% indetraibile,,
+21I5,l10n_it_chart_template_generic,1,purchase,Y,21I5,N,percent,-1,,0.21,template_IVC21Idet50,,-1,35,1,template_IVC21Idet50,,IVA al 21% detraibile al 50%,,
+21I5a,l10n_it_chart_template_generic,1,purchase,N,21I5a,N,percent,-1,template_IVC21Ndet50,0.5,,,-1,100,1,,21I5,IVA al 21% detraibile al 50% (I),,template_IVC21Ndet50
+10AOa,l10n_it_chart_template_generic,1,purchase,N,10AOa,N,percent,-1,template_IVC10ind,1,,,-1,100,1,,10AO,Iva al 10% indetraibile (I),,template_IVC10ind
+2010a,l10n_it_chart_template_generic,1,purchase,N,2010a,N,percent,-1,template_IVC20Ndet10,0.9,,,-1,100,1,,2010,Iva al 20% detraibile 10% (I),,template_IVC20Ndet10
+2015a,l10n_it_chart_template_generic,1,purchase,N,2015a,N,percent,-1,template_IVC20Ndet15,0.85,,,-1,100,1,,2015,Iva al 20% detraibile 15% (I),,template_IVC20Ndet15
+2040a,l10n_it_chart_template_generic,1,purchase,N,2040a,N,percent,-1,template_IVC20Ndet40,0.6,,,-1,100,1,,20AO,Iva al 20% detraibile 40% (I),,template_IVC20Ndet40
+20AOa,l10n_it_chart_template_generic,1,purchase,N,20AOa,N,percent,-1,template_IVC20ind,1,,,-1,100,1,,20AO,Iva al 20% indetraibile (I),,template_IVC20ind
+20I5a,l10n_it_chart_template_generic,1,purchase,N,20I5a,N,percent,-1,template_IVC20Ndet50,0.5,,,-1,100,1,,20I5,IVA al 20% detraibile al 50% (I),,template_IVC20Ndet50
+4AOa,l10n_it_chart_template_generic,1,purchase,N,4AOa,N,percent,-1,template_IVC4ind,1,,,-1,100,1,,4AO,Iva al 4% indetraibile (I),,template_IVC4ind
+10I5a,l10n_it_chart_template_generic,1,purchase,N,10I5a,N,percent,-1,template_IVC10Ndet50,0.5,,,-1,100,1,,10I5,IVA al 10% detraibile al 50% (I),,template_IVC10Ndet50
+4I5a,l10n_it_chart_template_generic,1,purchase,N,4I5a,N,percent,-1,template_IVC4Ndet50,0.5,,,-1,100,1,,4I5,IVA al 4% detraibile al 50% (I),,template_IVC4Ndet50
+2110a,l10n_it_chart_template_generic,1,purchase,N,2110a,N,percent,-1,template_IVC21Ndet10,0.9,,,-1,100,1,,2110,Iva al 21% detraibile 10% (I),,template_IVC21Ndet10
+2115a,l10n_it_chart_template_generic,1,purchase,N,2115a,N,percent,-1,template_IVC21Ndet15,0.85,,,-1,100,1,,2115,Iva al 21% detraibile 15% (I),,template_IVC21Ndet15
+2140a,l10n_it_chart_template_generic,1,purchase,N,2140a,N,percent,-1,template_IVC21Ndet40,0.6,,,-1,100,1,,2140,Iva al 21% detraibile 40% (I),,template_IVC21Ndet40
+21AOa,l10n_it_chart_template_generic,1,purchase,N,21AOa,N,percent,-1,template_IVD2I,1,,,-1,100,1,,21AO,Iva al 21% indetraibile (I),,template_IVC21ind
+2110b,l10n_it_chart_template_generic,1,purchase,N,2110b,N,balance,-1,template_IVC21det10,0,,,-1,200,1,,2110,Iva al 21% detraibile 10% (D),,template_IVC21det10
+10AOb,l10n_it_chart_template_generic,1,purchase,N,10AOb,N,balance,-1,template_IVC10,0,,,-1,200,1,,10AO,Iva al 10% indetraibile (D),,template_IVC10
+20AOb,l10n_it_chart_template_generic,1,purchase,N,20AOb,N,balance,-1,template_IVC20ind,0,,,-1,200,1,,20AO,Iva al 20% indetraibile (D),,template_IVC20ind
+2115b,l10n_it_chart_template_generic,1,purchase,N,2115b,N,balance,-1,template_IVC21det15,0,,,-1,200,1,,2115,Iva al 21% detraibile 15% (D),,template_IVC21det15
+2010b,l10n_it_chart_template_generic,1,purchase,N,2010b,N,balance,-1,template_IVC20det10,0,,,-1,200,1,,2010,Iva al 20% detraibile 10% (D),,template_IVC20det10
+2040b,l10n_it_chart_template_generic,1,purchase,N,2040b,N,balance,-1,template_IVC20det40,0,,,-1,200,1,,2040,Iva al 20% detraibile 40% (D),,template_IVC20det40
+2140b,l10n_it_chart_template_generic,1,purchase,N,2140b,N,balance,-1,template_IVC21det40,0,,,-1,200,1,,2140,Iva al 21% detraibile 40% (D),,template_IVC21det40
+21I5b,l10n_it_chart_template_generic,1,purchase,N,21I5b,N,balance,-1,template_IVC21det50,0,,,-1,200,1,,21I5,IVA al 21% detraibile al 50% (D),,template_IVC21det50
+2015b,l10n_it_chart_template_generic,1,purchase,N,2015b,N,balance,-1,template_IVC20det15,0,,,-1,200,1,,2015,Iva al 20% detraibile 15% (D),,template_IVC20det15
+21AOb,l10n_it_chart_template_generic,1,purchase,N,21AOb,N,balance,-1,template_IVC21ind,0,,,-1,200,1,,21AO,Iva al 21% indetraibile (D),,template_IVC21ind
+4I5b,l10n_it_chart_template_generic,1,purchase,N,4I5b,N,balance,-1,template_IVC4det50,0,,,-1,200,1,,4I5,IVA al 4% detraibile al 50% (D),,template_IVC4det50
+10I5b,l10n_it_chart_template_generic,1,purchase,N,10I5b,N,balance,-1,template_IVC10det50,0,,,-1,200,1,,10I5,IVA al 10% detraibile al 50% (D),,template_IVC10det50
+4AOb,l10n_it_chart_template_generic,1,purchase,N,4AOb,N,balance,-1,template_IVC4ind,0,,,-1,200,1,,4AO,Iva al 4% indetraibile (D),,template_IVC4ind
+20I5b,l10n_it_chart_template_generic,1,purchase,N,20I5b,N,balance,-1,template_IVC20det50,0,,,-1,200,1,,20I5,IVA al 20% detraibile al 50% (D),,template_IVC20det50

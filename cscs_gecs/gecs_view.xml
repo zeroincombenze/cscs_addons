@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+    
+        <record id="view_partner_form_cscs" model="ir.ui.view">
+            <field name="name">cscs.res.partner.form</field>
+            <field name="model">res.partner</field>
+            <field name="inherit_id" ref="base.view_partner_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="/form/sheet/notebook/page[@string='Internal Notes']" position="after">
+                    <page string="GECS">
+	                	<group>
+		                	<field name="X_GECS_ID"/>
+		                	<field name="text_GECS" widget="html"/>
+		                </group>
+                    </page>                	
+                </xpath>      
+            </field>
+        </record> 
+        
+
+    </data>
+</openerp>    

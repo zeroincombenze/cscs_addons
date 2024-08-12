@@ -1,0 +1,427 @@
+id,reconcile,code,parent_id:id,name,user_type:id,type
+0,False,0,,CSCS srl,account.data_account_type_view,View
+1,True,1,0,ATTIVO ,account.data_account_type_bank,View
+11,True,11,1,IMMOBILIZZAZIONI IMMATERIALI ,account.data_account_type_view,View
+110100,True,110100,11,costi di impianto ,account.data_account_type_asset,Regular
+110600,True,110600,11,software ,account.data_account_type_asset,Regular
+110800,True,110800,11,avviamento ,account.data_account_type_asset,Regular
+110900,False,110900,11,"concessioni, licenze, marchi , knowhow e altri",account.data_account_type_asset,Regular
+110901,False,110901,11,Spese di Ricerca e Sviluppo,account.data_account_type_asset,Regular
+110902,False,110902,11,Manutenzione e Rip. Beni di Terzi,account.data_account_type_asset,Regular
+12,True,12,1,IMMOBILIZZAZIONI MATERIALI ,account.data_account_type_view,View
+120100,True,120100,12,fabbricati ,account.data_account_type_asset,Regular
+120200,True,120200,12,impianti e macchinari ,account.data_account_type_asset,Regular
+120400,True,120400,12,attrezzature commerciali ,account.data_account_type_asset,Regular
+120500,True,120500,12,macchine d'ufficio ,account.data_account_type_asset,Regular
+120600,True,120600,12,arredamento ,account.data_account_type_asset,Regular
+120700,True,120700,12,automezzi ,account.data_account_type_asset,Regular
+120800,True,120800,12,imballaggi durevoli ,account.data_account_type_asset,Regular
+13,True,13,1,IMMOBILIZZAZIONI FINANZIARIE ,account.data_account_type_view,View
+130100,True,130100,13,mutui attivi ,account.data_account_type_asset,Regular
+130101,True,130101,13,Partecipazioni in controllate,account.data_account_type_asset,Regular
+14,True,14,1,RIMANENZE ,account.data_account_type_view,View
+140100,True,140100,14,materie di consumo ,account.data_account_type_asset,Regular
+140173,False,140173,14,Lav. in corso Rainova ID 37249,account.data_account_type_asset,Regular
+140174,False,140174,14,Lav. in corso EUM 4 ALL-ACTIVA ID 37249,account.data_account_type_asset,Regular
+140181,False,140181,14,Lav. in corso EMPLOY ID 37654,account.data_account_type_asset,Regular
+140182,False,140182,14,Lav. in corso RESILIENCE ID 36273,account.data_account_type_asset,Regular
+140184,False,140184,14,Lav. in corso MOVE ID 42815,account.data_account_type_asset,Regular
+140185,False,140185,14,Lav. in corso M TRANSITION ID 39494,account.data_account_type_asset,Regular
+140400,True,140400,14,merci ,account.data_account_type_asset,Regular
+141000,True,141000,14,fornitori c/acconti ,account.data_account_type_asset,Regular
+15,True,15,1,CREDITI COMMERCIALI ,account.data_account_type_view,View
+1501,True,1501,15,crediti v/clienti CSCS srl,account.data_account_type_receivable,Receivable
+150100 ROC Ter AA,False,150100 ROC Ter AA,15,crediti vs/ROC Ter AA,account.data_account_type_receivable,Receivable
+15010042196,False,15010042196,15,Crediti v/Skydsl,account.data_account_type_receivable,Receivable
+15010043239,False,15010043239,15,Crediti v/LVMH,account.data_account_type_receivable,Receivable
+150109,False,150109,15,crediti v/terzi per pagamenti errati,account.data_account_type_receivable,Receivable
+150110,False,150110,15,crediti diversi per fatture da ricevere,account.data_account_type_receivable,Receivable
+150112,False,150112,15,altri crediti,account.data_account_type_receivable,Receivable
+150200,True,150200,15,crediti commerciali diversi ,account.data_account_type_asset,Regular
+150217,False,150217,15,crediti v/c studi per incasso o pagamento non dovuti,account.data_account_type_asset,Regular
+150300,True,150300,15,clienti c/spese anticipate ,account.data_account_type_receivable,Receivable
+150500,True,150500,15,cambiali attive ,account.data_account_type_asset,Regular
+150600,True,150600,15,cambiali allo sconto ,account.data_account_type_asset,Regular
+150700,True,150700,15,cambiali all'incasso ,account.data_account_type_asset,Regular
+150900,True,150900,15,fatture da emettere ,account.data_account_type_asset,Regular
+150901,True,150901,15,fatture da emettere fino al 31/12/2010,account.data_account_type_asset,Regular
+150902,True,150902,15,fatture da emettere anno 2011,account.data_account_type_asset,Regular
+151000,True,151000,15,crediti insoluti ,account.data_account_type_asset,Regular
+1510042196,False,1510042196,15,Crediti v/Skydsl,account.data_account_type_receivable,Receivable
+151100,True,151100,15,cambiali insolute ,account.data_account_type_asset,Regular
+153100,True,153100,15,crediti da liquidare ,account.data_account_type_asset,Regular
+154000,True,154000,15,fondo svalutazione crediti ,account.data_account_type_asset,Regular
+154100,True,154100,15,fondo rischi su crediti ,account.data_account_type_asset,Regular
+16,True,16,1,CREDITI DIVERSI ,account.data_account_type_view,View
+1601,True,1601,16,IVA ns credito,account.data_account_type_asset,Regular
+160200,True,160200,16,IVA c/acconto ,account.data_account_type_asset,Regular
+160500,True,160500,16,crediti per IVA ,account.data_account_type_asset,Regular
+160600,False,160600,16,Iva Indetraibile ,account.data_account_type_receivable,Regular
+160700,True,160700,16,imposte c/acconto ,account.data_account_type_asset,Regular
+160701,False,160701,16,erario c/acconti IRAP,account.data_account_type_receivable,Receivable
+160702,False,160702,16,erario c/acconto IRES,account.data_account_type_receivable,Receivable
+160703,False,160703,16,credito da compensare IRAP,account.data_account_type_receivable,Receivable
+160704,False,160704,16,Credito da Compensare IRES,account.data_account_type_receivable,Receivable
+160705,False,160705,16,Credito Inail,account.data_account_type_receivable,Receivable
+160706,False,160706,16,Erario c/ritenute su Interessi Attivi,account.data_account_type_receivable,Regular
+160707,False,160707,16,Erario c/crediti a rimborso,account.data_account_type_receivable,Receivable
+160708,False,160708,16,Erario c/IRES a rimborso,account.data_account_type_receivable,Receivable
+160800,True,160800,16,crediti per imposte ,account.data_account_type_asset,Regular
+160900,True,160900,16,crediti per ritenute subite ,account.data_account_type_asset,Regular
+161000,True,161000,16,crediti per cauzioni ,account.data_account_type_asset,Regular
+161001,False,161001,16,Depositi cauzionali enel,account.data_account_type_receivable,Regular
+161003,False,161003,16,Depositi cauzionali su affitti,account.data_account_type_receivable,Regular
+161005,False,161005,16,Depositi cauzionali vari,account.data_account_type_receivable,Regular
+161007,False,161007,16,Depositi cauzionali Publiacqua,account.data_account_type_receivable,Regular
+162000,True,162000,16,personale c/acconti ,account.data_account_type_asset,Regular
+163000,True,163000,16,crediti v/istituti previdenziali ,account.data_account_type_asset,Regular
+164000,True,164000,16,debitori diversi ,account.data_account_type_receivable,Receivable
+17,True,17,1,Compensaz per.prec. dipendenti,account.data_account_type_view,View
+175001,False,175001,17,Tognarini Amm. Periodi Antec. CServizi,account.data_account_type_payable,Regular
+175002,False,175002,17,* Fornitori c/anticipi CServizi,account.data_account_type_payable,Regular
+18,True,18,1,DISPONIBILITÀ LIQUIDE ,account.data_account_type_view,View
+180001,False,180001,18,Contante,account.data_account_type_cash,Liquidity
+180002,False,180002,18,Banca,account.data_account_type_bank,Liquidity
+180003,False,180003,18,Banca MPS c/c1577073 CServizi,account.data_account_type_bank,Liquidity
+180004,False,180004,18,Banca CRPL c/c 710 CServizi,account.data_account_type_bank,Liquidity
+180005,False,180005,18,Banca anticipi CRPL c/c 435 CServizi,account.data_account_type_bank,Liquidity
+180100,True,180100,18,banche c/c ,account.data_account_type_bank,Liquidity
+180203,False,180203,18,Cassa anticipi dip. + collaboratori,account.data_account_type_cash,Liquidity
+180204,False,180204,18,Fondo cassa Bar Melos,account.data_account_type_cash,Liquidity
+180205,False,180205,18,Ticket Restaurant,account.data_account_type_cash,Liquidity
+180245,False,180245,18,Assegni voucher INPS lavoro accessorio,account.data_account_type_cash,Liquidity
+181000,True,181000,18,c/c postali ,account.data_account_type_bank,Liquidity
+182000,True,182000,18,denaro in cassa ,account.data_account_type_cash,Liquidity
+182100,True,182100,18,assegni in cassa,account.data_account_type_cash,Liquidity
+182200,True,182200,18,valori bollati ,account.data_account_type_cash,Liquidity
+183001,False,183001,18,Caript c/c 710,account.data_account_type_bank,Liquidity
+183004,False,183004,18,Banca Toscana c/c 15770/13 CServizi,account.data_account_type_bank,Liquidity
+183008,False,183008,18,Banca Etruria c/c 3947 CServizi,account.data_account_type_bank,Liquidity
+183010,False,183010,18,Banca Etruria anticipi fatture CServizi,account.data_account_type_bank,Liquidity
+183009,False,183009,18,Banca Etruria anticipi contratti CServizi,account.data_account_type_bank,Liquidity
+183011,False,183011,18,Banca Etruria sovvenzioni attive CServizi,account.data_account_type_bank,Liquidity
+183029,False,183029,18,Carta ricaricabile Bpel,account.data_account_type_bank,Liquidity
+242301,False,242301,18,BPEL c anticipi 382100,account.data_account_type_bank,Liquidity
+242302,False,242302,18,BPEL  c anticipo fatture estero,account.data_account_type_bank,Liquidity
+19,True,19,1,RATEI E RISCONTI ATTIVI ,account.data_account_type_view,View
+190100,True,190100,19,ratei attivi ,account.data_account_type_asset,Regular
+190200,True,190200,19,risconti attivi ,account.data_account_type_asset,Regular
+280100,True,280100,1,bilancio di apertura ,account.data_account_type_liability,Regular
+2,True,2,0,PASSIVO ,account.data_account_type_view,View
+20,True,20,2,PATRIMONIO NETTO ,account.data_account_type_view,View
+200100,True,200100,20,patrimonio netto ,account.data_account_type_liability,Regular
+200200,True,200200,20,utile d'esercizio ,account.data_account_type_liability,Regular
+200210,False,200210,20,riserva legale,account.conf_account_type_equity,Regular
+200220,False,200220,20,riserva straordinaria,account.conf_account_type_equity,Regular
+200300,True,200300,20,perdita d'esercizio ,account.data_account_type_liability,Regular
+200400,True,200400,20,prelevamenti extra gestione ,account.data_account_type_liability,Regular
+200500,True,200500,20,Riserva copertura future perdite,account.data_account_type_liability,Regular
+21,True,21,2,FONDI AMMORTAMENTO IMMOBILIZZAZIONI ,account.data_account_type_view,View
+110200,False,110200,21,Fondo ammortamento oneri pluriennali,account.data_account_type_liability,Regular
+111100,True,111100,21,fondo ammortamento costi di impianto ,account.data_account_type_liability,Regular
+111600,True,111600,21,fondo ammortamento software ,account.data_account_type_liability,Regular
+111800,True,111800,21,fondo ammortamento avviamento ,account.data_account_type_liability,Regular
+211801,True,211801,21,"fondo ammortamento concessioni, licenze, marchi , knowhow e altri",account.data_account_type_liability,Regular
+121100,True,121100,21,fondo ammortamento fabbricati ,account.data_account_type_liability,Regular
+121200,True,121200,21,fondo ammortamento impianti e macchinari ,account.data_account_type_liability,Regular
+121400,True,121400,21,fondo ammortamento attrezzature commerciali ,account.data_account_type_liability,Regular
+121500,True,121500,21,fondo ammortamento macchine d'ufficio ,account.data_account_type_liability,Regular
+121600,True,121600,21,fondo ammortamento arredamento ,account.data_account_type_liability,Regular
+121700,True,121700,21,fondo ammortamento automezzi ,account.data_account_type_liability,Regular
+121800,True,121800,21,fondo ammortamento imballaggi durevoli ,account.data_account_type_liability,Regular
+122000,True,122000,21,fornitori immobilizzazioni c/acconti ,account.data_account_type_liability,Regular
+211802,True,211802,21,Fondo Ammortamento Spese di Ricerca e Sviluppo,account.data_account_type_liability,Regular
+22,True,22,2,FONDI PER RISCHI E ONERI ,account.data_account_type_view,View
+220100,True,220100,22,fondo per imposte ,account.data_account_type_liability,Regular
+220200,False,220200,22,fondo previdenza dipendenti,account.data_account_type_liability,Regular
+220400,True,220400,22,fondo responsabilità civile ,account.data_account_type_liability,Regular
+220500,True,220500,22,fondo spese future ,account.data_account_type_liability,Regular
+220600,False,220600,22,fondo ammortamento svalutazione crediti,account.data_account_type_liability,Regular
+221100,True,221100,22,fondo manutenzioni programmate ,account.data_account_type_liability,Regular
+23,True,23,2,TRATTAMENTO FINE RAPPORTO DI LAVORO ,account.data_account_type_view,View
+230100,True,230100,23,debiti per TFRL ,account.data_account_type_liability,Regular
+230101,False,230101,23,Fondo tfr dipendenti,account.data_account_type_liability,Regular
+230102,False,230102,23,Fondo tfr amministratore,account.data_account_type_liability,Regular
+24,True,24,2,DEBITI FINANZIARI ,account.data_account_type_view,View
+241000,True,241000,24,mutui passivi ,account.data_account_type_liability,Regular
+241100,True,241100,24,banche c/sovvenzioni ,account.data_account_type_liability,Regular
+241101,False,241101,24,BPEL c sovvenzioni 382176,account.data_account_type_payable,Regular
+242000,True,242000,24,banche c/c passivi ,account.data_account_type_liability,Regular
+242100,True,242100,24,banche c/RIBA all'incasso ,account.data_account_type_liability,Regular
+242200,True,242200,24,banche c/cambiali all'incasso ,account.data_account_type_liability,Regular
+242300,True,242300,24,banche c/anticipi su fatture ,account.data_account_type_liability,Regular
+242303,False,242303,24,caript c anticipi c/c 1000/435,account.data_account_type_payable,Regular
+242304,False,242304,24,caript c anticipi fatture ,account.data_account_type_payable,Regular
+244000,True,244000,24,debiti v/altri finanziatori ,account.data_account_type_liability,Regular
+244010,False,244010,24,debito vs/partecipate,account.data_account_type_liability,Regular
+244020,False,244020,24,debito finanziario vs/cscs associaz,account.data_account_type_liability,Regular
+244030,False,244030,24,assegni soci non rientrati,account.data_account_type_payable,Regular
+25,True,25,2,DEBITI COMMERCIALI ,account.data_account_type_view,View
+2501,True,2501,25,debiti verso fornitori ,account.data_account_type_payable,Payable
+25010020645,False,25010020645,25,Debiti v/Ikea,account.data_account_type_payable,Payable
+25010042196,False,25010042196,25,Debiti v/SkyDSL,account.data_account_type_payable,Payable
+25010042606,False,25010042606,25,debiti v/Alitalia,account.data_account_type_payable,Payable
+250200,False,250200,25,debiti vs/cstudi x Incasso/pagamento non dovuto,account.data_account_type_payable,Regular
+250300,True,250300,25,cambiali passive ,account.data_account_type_liability,Regular
+252000,True,252000,25,fatture da ricevere ,account.data_account_type_liability,Regular
+252100,True,252100,25,debiti da liquidare ,account.data_account_type_liability,Regular
+253000,True,253000,25,clienti c/acconti ,account.data_account_type_payable,Payable
+253060,False,253060,25, Acconti EUM 4 ALL 37249 ACTIVA,account.data_account_type_payable,Regular
+253061,False,253061,25, Acconti RAINOVA ID 36968,account.data_account_type_payable,Regular
+253067,False,253067,25, Acconti RESILIENCE id 36273,account.data_account_type_payable,Regular
+253068,False,253068,25, Acconti Employ ID 37654,account.data_account_type_payable,Regular
+26,True,26,2,DEBITI DIVERSI ,account.data_account_type_view,View
+260200,True,260200,26,RA SRL ritenuta acconto 20%,account.data_account_type_payable,Regular
+2601,True,2601,26,IVA n/debito ,account.data_account_type_liability,Regular
+260101,False,260101,26,iva ns debito corrispettivi melos,account.data_account_type_liability,Regular
+260500,True,260500,26,erario c/IVA ,account.data_account_type_payable,Payable
+260501,True,260501,26,erario c/ritenute passive,account.data_account_type_liability,Regular
+260502,False,260502,26,erario c/imposta IRAP,account.data_account_type_liability,Regular
+260503,False,260503,26,Erario c/imposta IRES,account.data_account_type_liability,Regular
+260504,False,260504,26,Erario c/ritenute su professionisti,account.data_account_type_liability,Regular
+260505,False,260505,26,debiti v/Fondo Est,account.data_account_type_payable,Regular
+260508,False,260508,26,rivalutazione tfr 11%,account.data_account_type_liability,Regular
+260600,True,260600,26,debiti per imposte ,account.data_account_type_liability,Regular
+261900,True,261900,26,debiti per cauzioni ,account.data_account_type_liability,Regular
+262000,True,262000,26,debiti per salari CServ,account.data_account_type_liability,Regular
+262010,False,262010,26,debiti per collaboratori CServ,account.data_account_type_liability,Regular
+262030,False,262030,26,debiti per rimborsi spesa,account.data_account_type_liability,Regular
+262100,True,262100,26,personale c/liquidazioni ,account.data_account_type_liability,Regular
+262200,True,262200,26,clienti c/cessione ,account.data_account_type_liability,Regular
+263000,True,263000,26,debiti v/istituti previdenziali ,account.data_account_type_liability,Regular
+263001,False,263001,26,debiti v/inps,account.data_account_type_liability,Regular
+263002,False,263002,26,debiti c/inail,account.data_account_type_liability,Regular
+264000,True,264000,26,creditori diversi ,account.data_account_type_payable,Payable
+264001,False,264001,26,debiti vs/terzi per errato incasso,account.data_account_type_payable,Regular
+265060,False,265060,26,Anticipi EUM 4 ALL 37249 ACTIVA,account.data_account_type_liability,Regular
+265061,False,265061,26,Anticipi RAINOVA ID 36968,account.data_account_type_liability,Regular
+265067,False,265067,26,Anticipi RESILIENCE id 36273,account.data_account_type_liability,Regular
+265068,False,265068,26,Anticipi Employ ID 37654,account.data_account_type_liability,Regular
+amministratori c/competenze,False,amministratori c/competenze,26,262020,account.data_account_type_liability,Regular
+27,True,27,2,RATEI E RISCONTI PASSIVI ,account.data_account_type_view,View
+270100,True,270100,27,ratei passivi ,account.data_account_type_liability,Regular
+270200,True,270200,27,risconti passivi ,account.data_account_type_liability,Regular
+28,True,28,2,CONTI TRANSITORI E DIVERSI ,account.data_account_type_view,View
+280200,True,280200,28,bilancio di chiusura ,account.data_account_type_liability,Regular
+281000,True,281000,28,IVA c/liquidazioni ,account.data_account_type_liability,Regular
+281100,True,281100,28,istituti previdenziali ,account.data_account_type_liability,Regular
+282000,True,282000,28,banca ... c/c ,account.data_account_type_liability,Regular
+282100,True,282100,28,banca ... c/c ,account.data_account_type_liability,Regular
+282200,True,282200,28,banca ... c/c ,account.data_account_type_liability,Regular
+29,True,29,2,CONTI DEI SISTEMI SUPPLEMENTARI ,account.data_account_type_view,View
+290100,True,290100,29,beni di terzi ,account.data_account_type_liability,Regular
+290200,True,290200,29,depositanti beni ,account.data_account_type_liability,Regular
+291100,True,291100,29,merci da ricevere ,account.data_account_type_liability,Regular
+291200,True,291200,29,fornitori c/impegni ,account.data_account_type_liability,Regular
+291300,True,291300,29,impegni per beni in leasing ,account.data_account_type_liability,Regular
+291400,True,291400,29,creditori c/leasing ,account.data_account_type_liability,Regular
+291600,True,291600,29,clienti c/impegni ,account.data_account_type_liability,Regular
+291700,True,291700,29,merci da consegnare ,account.data_account_type_liability,Regular
+292100,True,292100,29,rischi per effetti scontati ,account.data_account_type_liability,Regular
+292200,True,292200,29,banche c/effetti scontati ,account.data_account_type_liability,Regular
+292600,True,292600,29,rischi per fideiussioni ,account.data_account_type_liability,Regular
+292700,True,292700,29,creditori per fideiussioni ,account.data_account_type_liability,Regular
+293100,True,293100,29,rischi per avalli ,account.data_account_type_liability,Regular
+293200,True,293200,29,creditori per avalli ,account.data_account_type_liability,Regular
+3,True,3,0,VALORE DELLA PRODUZIONE ,account.data_account_type_view,View
+31,True,31,3,VENDITE E PRESTAZIONI ,account.data_account_type_view,View
+3101,True,3101,31,prestazioni c/vendite ,account.data_account_type_income,Regular
+310101,False,310101,31,assistenza tecnica c/vendite,account.data_account_type_income,Regular
+310102,False,310102,31,IMY language and Cultural Course c/vendite,account.data_account_type_income,Regular
+310103,False,310103,31,ricavi ostello Michelina,account.data_account_type_income,Regular
+310108,False,310108,31,Ricavi Autofatture Skydsl,account.data_account_type_income,Regular
+310109,False,310109,31,Ricavi Autofatture CServizi,account.data_account_type_income,Regular
+310104,False,310104,31,Ricavi fatture/corrispettivi Melos,account.data_account_type_income,Regular
+310105,False,310105,31,ricavi Move id 42815,account.data_account_type_income,Regular
+310106,False,310106,31,ricavi Manage id 22630,account.data_account_type_income,Regular
+310107,False,310107,31,ricavi Regione Sardegna id 430..,account.data_account_type_income,Regular
+310110,False,310110,31,IMY Accommodation c/vendite,account.data_account_type_income,Regular
+310120,False,310120,31,IMY transfer c/vendite,account.data_account_type_income,Regular
+310121,False,310121,31,IMY commissioni transfer c/vendite,account.data_account_type_income,Regular
+310122,False,310122,31,IMY commissioni vitto c/vendite,account.data_account_type_income,Regular
+310123,False,310123,31,IMY commissioni alloggio c/vendite,account.data_account_type_income,Regular
+310130,False,310130,31,IMI work placement c/vendite,account.data_account_type_income,Regular
+310140,False,310140,31,IMY work placement Insurance,account.data_account_type_income,Regular
+310150,False,310150,31,IMY Mobility Full Package,account.data_account_type_income,Regular
+310300,True,310300,31,rimborsi spese di vendita ,account.data_account_type_income,Regular
+310301,False,310301,31,rimborsi spese trasporto,account.data_account_type_income,Regular
+310400,True,310400,31,IMY servizi c/vendite iva 22%,account.data_account_type_receivable,Regular
+311000,True,311000,31,resi su vendite ,account.data_account_type_income,Regular
+311100,True,311100,31,ribassi e abbuoni passivi ,account.data_account_type_income,Regular
+311200,True,311200,31,premi su vendite ,account.data_account_type_income,Regular
+32,True,32,3,RICAVI E PROVENTI DIVERSI ,account.data_account_type_view,View
+320100,True,320100,32,fitti attivi ,account.data_account_type_income,Regular
+320200,True,320200,32,proventi vari ,account.data_account_type_income,Regular
+321000,True,321000,32,arrotondamenti attivi ,account.data_account_type_income,Regular
+322000,True,322000,32,plusvalenze ordinarie diverse ,account.data_account_type_income,Regular
+323000,True,323000,32,sopravvenienze attive ordinarie diverse ,account.data_account_type_income,Regular
+324000,True,324000,32,insussistenze attive ordinarie diverse ,account.data_account_type_income,Regular
+33,True,33,3,RIMANENZE FINALI ,account.data_account_type_view,View
+413101,True,413101,33,progetti c/rimanenze finali Rainova id 36968 ,account.data_account_type_income,Regular
+413102,True,413102,33,progetti c/rimanenze finali Employ id 37654,account.data_account_type_income,Regular
+413103,True,413103,33,progetti c/rimanenze finali Resilience id 36273,account.data_account_type_income,Regular
+413104,True,413104,33,progetti c/rimanenze finali M Transition id 39494,account.data_account_type_income,Regular
+4,True,4,0,COSTI ,account.data_account_type_view,View
+41,True,41,4,COSTI PER BENI/SERVIZI VENDUTI ,account.data_account_type_view,View
+4101,True,4101,41,beni e servizi c/acquisti C Servizi,account.data_account_type_expense,Regular
+410200,True,410200,41,beni/servizi per manutenzioni servizi venduti,account.data_account_type_expense,Regular
+410210,False,410210,41,materiale di consumo c/acquisto alloggio,account.data_account_type_expense,Regular
+410220,False,410220,41,materiale c/acquisti formazione professionale,account.data_account_type_expense,Regular
+410230,False,410230,41,materiale di consumo c/acquisti ristorazione,account.data_account_type_expense,Regular
+410300,False,410300,41,acquisto beni inf a € 516.46,account.data_account_type_expense,Regular
+410500,True,410500,41,merci c/apporti ,account.data_account_type_expense,Regular
+411000,True,411000,41,resi su acquisti ,account.data_account_type_expense,Regular
+411100,True,411100,41,ribassi e abbuoni attivi ,account.data_account_type_expense,Regular
+411200,True,411200,41,premi su acquisti ,account.data_account_type_expense,Regular
+412100,True,412100,41,merci c/esistenze iniziali ,account.data_account_type_expense,Regular
+412134,False,412134,41,progetti c/esistenze iniziali Rainova id 36968,account.data_account_type_expense,Regular
+412135,False,412135,41,progetti c/esistenze iniziali Eum 4 all activa id 37249,account.data_account_type_expense,Regular
+412142,False,412142,41,progetti c/esistenze iniziali Employ id 37654,account.data_account_type_expense,Regular
+412143,False,412143,41,progetti c/esistenze iniziali Resilience id 36273,account.data_account_type_expense,Regular
+412145,False,412145,41,progetti c/esistenze iniziali Move id 42815,account.data_account_type_expense,Regular
+412146,False,412146,41,progetti c/esistenze iniziali M Transition id 39494,account.data_account_type_expense,Regular
+412200,True,412200,41,materie di consumo c/esistenze iniziali ,account.data_account_type_expense,Regular
+413100,True,413100,41,merci c/rimanenze finali ,account.data_account_type_expense,Regular
+413200,True,413200,41,materie di consumo c/rimanenze finali ,account.data_account_type_expense,Regular
+413201,True,413201,41,Commissioni PosVirtuale,account.data_account_type_expense,Regular
+42,True,42,4,COSTI PER SERVIZI,account.data_account_type_view,View
+420100,True,420100,42,costi di trasporto ,account.data_account_type_expense,Regular
+420101,False,420101,42,spese di viaggio,account.data_account_type_expense,Regular
+420110,False,420110,42,autobus e taxi,account.data_account_type_expense,Regular
+420200,True,420200,42,costi per energia ,account.data_account_type_expense,Regular
+420300,True,420300,42,costi di pubblicità ,account.data_account_type_expense,Regular
+420400,True,420400,42,costi di consulenze ,account.data_account_type_expense,Regular
+420401,False,420401,42,compensi a professionisti,account.data_account_type_expense,Regular
+420402,False,420402,42,spese consulenze di terzi,account.data_account_type_expense,Regular
+420403,False,420403,42,compensi a professionisti afferenti attività,account.data_account_type_expense,Regular
+420404,False,420404,42,spese consulenti elaborazione dati,account.data_account_type_expense,Regular
+420500,True,420500,42,costi postali ,account.data_account_type_expense,Regular
+420501,False,420501,42,canone assistenza,account.data_account_type_expense,Regular
+420514,False,420514,42,Canoni servizi,account.data_account_type_expense,Regular
+420502,False,420502,42,"cancelleria, riviste, stampe",account.data_account_type_expense,Regular
+420503,False,420503,42,spese vidimazione libri sociali,account.data_account_type_expense,Regular
+420504,False,420504,42,spese quote associative,account.data_account_type_expense,Regular
+420505,False,420505,42,spese varie,account.data_account_type_expense,Regular
+420506,False,420506,42,spese carburante,account.data_account_type_expense,Regular
+420507,False,420507,42,parcheggi autovetture,account.data_account_type_expense,Regular
+420508,False,420508,42,alberghi e ristoranti,account.data_account_type_expense,Regular
+420509,False,420509,42,alberghi e ristoranti di rappresentanza,account.data_account_type_expense,Regular
+420510,False,420510,42,altre spese di rappresentanza imp<50€,account.data_account_type_expense,Regular
+420516,False,420516,42,Spese di rappresentanza,account.data_account_type_expense,Regular
+420511,False,420511,42,spese Siae,account.data_account_type_expense,Regular
+420512,False,420512,42,rimborsi spese a clienti,account.data_account_type_expense,Regular
+420513,False,420513,42,rimborsi spese a piè lista,account.data_account_type_expense,Regular
+420515,False,420515,42,Valori Bollati,account.data_account_type_expense,Regular
+420600,True,420600,42,costi telefonici ,account.data_account_type_expense,View
+420601,False,420601,42,spese telefoniche,account.data_account_type_expense,Regular
+420602,False,420602,42,spese telefono cellulare,account.data_account_type_expense,Regular
+420603,False,420603,42,altre spese telefoniche,account.data_account_type_expense,Regular
+420604,False,420604,42,Spese telefono cellulare ded.100%,account.data_account_type_expense,Regular
+420605,False,420605,42,spese telefoniche ded 100%,account.data_account_type_expense,Regular
+420606,False,420606,42,Spese telefoniche ded. 80%,account.data_account_type_expense,Regular
+420700,True,420700,42,costi di assicurazione ,account.data_account_type_expense,Regular
+420800,True,420800,42,costi di vigilanza ,account.data_account_type_expense,Regular
+420900,True,420900,42,costi manutenzioni immobili,account.data_account_type_expense,Regular
+420901,False,420901,42,spese energia elettrica,account.data_account_type_expense,Regular
+420902,False,420902,42,spese gas metano,account.data_account_type_expense,Regular
+420903,False,420903,42,spese acqua,account.data_account_type_expense,Regular
+420904,False,420904,42,spese per pulizie,account.data_account_type_expense,Regular
+420905,False,420905,42,spese IMU imposta comunale,account.data_account_type_expense,Regular
+421000,True,421000,42,costi di esercizio automezzi ,account.data_account_type_expense,Regular
+421100,True,421100,42,costi di manutenzione e riparazioni,account.data_account_type_expense,Regular
+421200,True,421200,42,provvigioni passive ,account.data_account_type_expense,Regular
+421300,True,421300,42,spese di incasso ,account.data_account_type_expense,Regular
+490104,False,490104,42,imposte varie deducibili,account.data_account_type_expense,Regular
+43,True,43,4,COSTI PER GODIMENTO BENI DI TERZI ,account.data_account_type_view,View
+430100,True,430100,43,fitti passivi ,account.data_account_type_expense,Regular
+430200,True,430200,43,canoni di leasing ,account.data_account_type_expense,Regular
+430300,False,430300,43,noleggio,account.data_account_type_expense,Regular
+430301,False,430301,43,spese per noleggio biancheria,account.data_account_type_expense,Regular
+430302,False,430302,43,costi di manutenzione e riparazioni su beni in locaz,account.data_account_type_expense,Regular
+44,True,44,4,COSTI PER IL PERSONALE ,account.data_account_type_view,View
+440101,True,440101,44,salari CServ,account.data_account_type_expense,Regular
+440200,True,440200,44,oneri sociali ,account.data_account_type_expense,Regular
+440201,False,440201,44,contributi inps,account.data_account_type_expense,Regular
+440202,False,440202,44,contributi inail,account.data_account_type_expense,Regular
+440203,False,440203,44,Fondo Est,account.data_account_type_expense,Regular
+440300,True,440300,44,TFRL ,account.data_account_type_expense,Regular
+440301,False,440301,44,TFRL dipendenti,account.data_account_type_expense,Regular
+440302,False,440302,44,TFRL amministratori,account.data_account_type_expense,Regular
+440400,True,440400,44,altri costi per il personale ,account.data_account_type_expense,Regular
+440401,False,440401,44,compensi per prestazioni occasionali,account.data_account_type_expense,Regular
+440402,False,440402,44,costi per collaboratori CServ ,account.data_account_type_expense,Regular
+440403,False,440403,44,compensi amministratore,account.data_account_type_expense,Regular
+440404,False,440404,44,prestazioni di lavoro occasionale accessorio,account.data_account_type_expense,Regular
+45,True,45,4,AMMORTAMENTI IMMOBILIZZAZIONI IMMATERIALI ,account.data_account_type_view,View
+450100,True,450100,45,ammortamento costi di impianto ,account.data_account_type_expense,Regular
+450600,True,450600,45,ammortamento software ,account.data_account_type_expense,Regular
+450800,True,450800,45,ammortamento avviamento ,account.data_account_type_expense,Regular
+46,True,46,4,AMMORTAMENTI IMMOBILIZZAZIONI MATERIALI ,account.data_account_type_view,View
+460100,True,460100,46,ammortamento fabbricati ,account.data_account_type_expense,Regular
+460200,True,460200,46,ammortamento impianti e macchinari ,account.data_account_type_expense,Regular
+460400,True,460400,46,ammortamento attrezzature commerciali ,account.data_account_type_expense,Regular
+460500,True,460500,46,ammortamento macchine d'ufficio ,account.data_account_type_expense,Regular
+460600,True,460600,46,ammortamento arredamento ,account.data_account_type_expense,Regular
+460700,True,460700,46,ammortamento automezzi ,account.data_account_type_expense,Regular
+460800,True,460800,46,ammortamento imballaggi durevoli ,account.data_account_type_expense,Regular
+47,True,47,4,SVALUTAZIONI ,account.data_account_type_view,View
+470100,True,470100,47,svalutazioni immobilizzazioni immateriali ,account.data_account_type_expense,Regular
+470200,True,470200,47,svalutazioni immobilizzazioni materiali ,account.data_account_type_expense,Regular
+470600,True,470600,47,svalutazione crediti ,account.data_account_type_expense,Regular
+48,True,48,4,ACCANTONAMENTI ,account.data_account_type_view,View
+481,True,481,48,ACCANTONAMENTI PER RISCHI ,account.data_account_type_view,View
+481400,True,481400,481,accantonamento per responsabilità civile ,account.data_account_type_expense,Regular
+482,True,482,48,ALTRI ACCANTONAMENTI ,account.data_account_type_view,View
+482100,True,482100,482,accantonamento per spese future ,account.data_account_type_expense,Regular
+482300 srl,True,482300 srl,482,accantonamento per manutenzioni programmate ,account.data_account_type_expense,Regular
+49,True,49,4,ONERI DIVERSI ,account.data_account_type_view,View
+490100,True,490100,49,oneri fiscali diversi ,account.data_account_type_expense,Regular
+490101,False,490101,49,imposte e tasse - canone rai,account.data_account_type_expense,Regular
+490102,False,490102,49,penalità esattoriali,account.data_account_type_expense,Regular
+490105,False,490105,49,Penalità Istituti Previdenziali CServizi,account.data_account_type_expense,Regular
+490103,False,490103,49,diritti camerali e tasse governative,account.data_account_type_expense,Regular
+490300,True,490300,49,oneri vari ,account.data_account_type_expense,Regular
+490301,False,490301,49,costi indeducibili,account.data_account_type_expense,Regular
+490302,False,490302,49,multe,account.data_account_type_expense,Regular
+490500,True,490500,49,perdite su crediti ,account.data_account_type_expense,Regular
+491000,True,491000,49,arrotondamenti passivi ,account.data_account_type_expense,Regular
+492000,True,492000,49,minusvalenze ordinarie diverse ,account.data_account_type_expense,Regular
+493000,True,493000,49,sopravvenienze passive ordinarie diverse ,account.data_account_type_expense,Regular
+494000,True,494000,49,insussistenze passive ordinarie diverse ,account.data_account_type_expense,Regular
+5,True,5,0,PROVENTI E ONERI FINANZIARI ,account.data_account_type_view,View
+51,True,51,5,PROVENTI FINANZIARI ,account.data_account_type_view,View
+511000,True,511000,51,interessi attivi v/clienti ,account.data_account_type_income,Regular
+511500,True,511500,51,interessi attivi bancari ,account.data_account_type_income,Regular
+511600,True,511600,51,interessi attivi postali ,account.data_account_type_income,Regular
+514000,True,514000,51,proventi finanziari diversi ,account.data_account_type_income,Regular
+52,True,52,5,ONERI FINANZIARI ,account.data_account_type_view,View
+520100,True,520100,52,interessi passivi v/fornitori ,account.data_account_type_expense,Regular
+520101,True,520101,52,interessi passivi diversi,account.data_account_type_expense,Regular
+520150,False,520150,52,interessi passivi v/erario,account.data_account_type_expense,Regular
+520200,True,520200,52,interessi passivi bancari ,account.data_account_type_expense,Regular
+520201,False,520201,52,Interessi bancari passivi su anticipi,account.data_account_type_expense,Regular
+520202,False,520202,52,interessi bancari passivi su c/c,account.data_account_type_expense,Regular
+520300,True,520300,52,sconti passivi bancari ,account.data_account_type_expense,Regular
+521000,True,521000,52,interessi passivi su mutui ,account.data_account_type_expense,Regular
+524000,True,524000,52,oneri finanziari diversi ,account.data_account_type_expense,Regular
+524001,False,524001,52,oneri bancari per anticipi,account.data_account_type_expense,Regular
+524002,False,524002,52,oneri bancari per c/c,account.data_account_type_expense,Regular
+524003,False,524003,52,Spese bancarie per c/c,account.data_account_type_expense,Regular
+7,True,7,0,PROVENTI E ONERI STRAORDINARI ,account.data_account_type_view,View
+71,True,71,7,PROVENTI STRAORDINARI ,account.data_account_type_view,View
+710100,True,710100,71,plusvalenze straordinarie ,account.data_account_type_income,Regular
+710200,True,710200,71,sopravvenienze attive straordinarie ,account.data_account_type_income,Regular
+710300,True,710300,71,insussistenze attive straordinarie ,account.data_account_type_income,Regular
+72,True,72,7,ONERI STRAORDINARI ,account.data_account_type_view,View
+720100,True,720100,72,minusvalenze straordinarie ,account.data_account_type_expense,Regular
+720200,True,720200,72,sopravvenienze passive straordinarie ,account.data_account_type_expense,Regular
+720300,True,720300,72,insussistenze passive straordinarie ,account.data_account_type_expense,Regular
+720301,False,720301,72,furti e ammanchi,account.data_account_type_expense,Regular
+720400,True,720400,72,imposte esercizi precedenti ,account.data_account_type_expense,Regular
+8,True,8,0,IMPOSTE DELL'ESERCIZIO ,account.data_account_type_view,View
+810100,True,810100,8,imposte dell'esercizio ,account.data_account_type_expense,Regular
+810101,False,810101,8,Irap dell'esercizio,account.conf_account_type_tax,Regular
+810102,False,810102,8,Ires dell'esercizio,account.conf_account_type_tax,Regular
+9,True,9,0,CONTI DI RISULTATO ,account.data_account_type_view,View
+910100,True,910100,9,conto di risultato economico ,account.data_account_type_expense,Regular
+910200,True,910200,9,stato patrimoniale,account.data_account_type_expense,Regular

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+<data noupdate="0">
+   <record id="group_msg_manager_1" model="res.groups">
+        <field name="name">Level 1 Employee</field>
+        <field name="category_id" ref="base.module_category_hidden"/>
+    </record>
+    <record id="group_msg_manager_2" model="res.groups">
+        <field name="name">Level 2 Employee</field>
+        <field name="category_id" ref="base.module_category_hidden"/>
+    </record>
+    <record id="group_msg_manager_3" model="res.groups">
+        <field name="name">Level 3 Employee</field>
+        <field name="category_id" ref="base.module_category_hidden"/>
+    </record>
+</data>
+<!--<data noupdate="0">-->
+<!--    <record model="ir.rule" id="mail_massage_level1_rule">-->
+<!--        <field name="name">Massage Level1</field>-->
+<!--        <field name="model_id" ref="mail.model_mail_message"/>-->
+<!--        -->
+<!--        <field name="groups" eval="[(4, ref('group_msg_manager_2'))]"/>-->
+<!--        <field name="domain_force">['|',('security_level','=',False),('security_level','in',['1'])]</field>-->
+<!--    </record>-->
+<!--    <record model="ir.rule" id="mail_massage_level2_rule">-->
+<!--         <field name="name">Massage Level2</field>-->
+<!--         <field name="model_id" ref="mail.model_mail_message"/>-->
+<!--         <field name="groups" eval="[(4, ref('group_msg_manager_2'))]"/>-->
+<!--        <field name="domain_force">['|',('security_level','=',False),('security_level','in',['1','2'])]</field>-->
+<!--    </record>-->
+<!--    <record model="ir.rule" id="mail_massage_level3_rule">-->
+<!--         <field name="name">Massage Level3</field>-->
+<!--         <field name="model_id" ref="mail.model_mail_message"/>-->
+<!--         <field name="groups" eval="[(4, ref('group_msg_manager_3'))]"/>-->
+<!--        <field name="domain_force">['|',('security_level','=',False),('security_level','in',['1','2','3'])]</field>-->
+<!--    </record>-->
+<!--    -->
+<!--   -->
+<!--</data>-->
+</openerp>

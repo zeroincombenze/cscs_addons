@@ -1,0 +1,394 @@
+id,reconcile,code,parent_id/id,name,user_type/id,type
+0,False,0,,CSCS CStudi,account.data_account_type_view,View
+1,True,1,0,ATTIVO  CStudi,account.data_account_type_view,View
+11,True,11,1,IMMOBILIZZAZIONI IMMATERIALI  CStudi,account.data_account_type_view,View
+110100,True,110100,11,costi di impianto  CStudi,account.data_account_type_asset,Regular
+110200,True,110200,11,Partecipazioni in altre imprese CStudi,account.data_account_type_asset,Regular
+110600,True,110600,11,software  CStudi,account.data_account_type_asset,Regular
+110800,True,110800,11,avviamento  CStudi,account.data_account_type_asset,Regular
+111100,True,111100,11,fondo ammortamento costi di impianto  CStudi,account.data_account_type_asset,Regular
+111600,True,111600,11,fondo ammortamento software  CStudi,account.data_account_type_asset,Regular
+111800,True,111800,11,fondo ammortamento avviamento  CStudi,account.data_account_type_asset,Regular
+12,True,12,1,IMMOBILIZZAZIONI MATERIALI  CStudi,account.data_account_type_view,View
+120100,True,120100,12,fabbricati  CStudi,account.data_account_type_asset,Regular
+120200,True,120200,12,impianti e macchinari  CStudi,account.data_account_type_asset,Regular
+120250,False,120250,12,"beni inferiori a  516,46 Cstudi",account.data_account_type_asset,Regular
+120400,True,120400,12,attrezzature commerciali  CStudi,account.data_account_type_asset,Regular
+120500,True,120500,12,macchine d'ufficio  CStudi,account.data_account_type_asset,Regular
+120600,True,120600,12,arredamento  CStudi,account.data_account_type_asset,Regular
+120700,True,120700,12,automezzi  CStudi,account.data_account_type_asset,Regular
+120800,True,120800,12,imballaggi durevoli  CStudi,account.data_account_type_asset,Regular
+121100,True,121100,12,fondo ammortamento fabbricati  CStudi,account.data_account_type_asset,Regular
+121200,True,121200,12,fondo ammortamento impianti e macchinari  CStudi,account.data_account_type_asset,Regular
+121400,True,121400,12,fondo ammortamento attrezzature commerciali  CStudi,account.data_account_type_asset,Regular
+121500,True,121500,12,fondo ammortamento macchine d'ufficio  CStudi,account.data_account_type_asset,Regular
+121600,True,121600,12,fondo ammortamento arredamento  CStudi,account.data_account_type_asset,Regular
+121700,True,121700,12,fondo ammortamento automezzi  CStudi,account.data_account_type_asset,Regular
+121800,True,121800,12,fondo ammortamento imballaggi durevoli  CStudi,account.data_account_type_asset,Regular
+122000,True,122000,12,fornitori immobilizzazioni c/acconti  CStudi,account.data_account_type_asset,Regular
+13,True,13,1,IMMOBILIZZAZIONI FINANZIARIE  CStudi,account.data_account_type_view,View
+130100,True,130100,13,mutui attivi  CStudi,account.data_account_type_asset,Regular
+14,True,14,1,RIMANENZE  CStudi,account.data_account_type_view,View
+140100,True,140100,14,materie di consumo  CStudi,account.data_account_type_asset,Regular
+140170,False,140170,14,Lav. In corso progetto CREBUS CStudi,account.data_account_type_asset,Regular
+140171,False,140171,14,Voucher in corso Cstudi,account.data_account_type_asset,Regular
+140175,False,140175,14,Lav. In corso EUM NETWORK ID 36057 Cstudi,account.data_account_type_asset,Regular
+140176,False,140176,14,Lav. In corso SOS NETWORK ID 22850 Cstudi,account.data_account_type_asset,Regular
+140177,False,140177,14,Lav. In corso EM 4_ID 37254 Cstudi,account.data_account_type_asset,Regular
+140178,False,140178,14,Lav. in corso CB4LLP_ID 37782 Cstudi,account.data_account_type_asset,Regular
+140179,False,140179,14,Lav. In corso EM V_ID 38263 Cstudi,account.data_account_type_asset,Regular
+140181,False,140181,14,Lav. In corso EM VI Cstudi,account.data_account_type_asset,Regular
+140180,False,140180,14,Lav. In corso PERFECT MATCH - ID 37387 Cstudi,account.data_account_type_asset,Regular
+140186,False,140186,14,Lav. In corso CONNECT-VET ID 43003 Cstudi,account.data_account_type_asset,Regular
+140400,True,140400,14,merci  CStudi,account.data_account_type_asset,Regular
+141000,True,141000,14,fornitori c/acconti  CStudi,account.data_account_type_asset,Regular
+15,True,15,1,CREDITI x servizi sussidiari CStudi,account.data_account_type_view,View
+1501,True,1501,15,crediti v/committenti convenzionati (clienti) CStudi,account.data_account_type_receivable,Receivable
+150109,False,150109,15,crediti v/terzi per pagamenti/bonifici errati Cstudi,account.data_account_type_receivable,Regular
+150110,False,150110,15,crediti diversi per fatture da ricevere Cstudi,account.data_account_type_receivable,Regular
+150112,False,150112,15,altri crediti Cstudi,account.data_account_type_receivable,Regular
+150217,False,150217,15,crediti v/cscs srl per incasso o pagamento non dovuto CStudi,account.data_account_type_receivable,Regular
+150300,True,150300,15,committenti convenzionati c/spese anticipate  CStudi,account.data_account_type_receivable,Receivable
+150500,True,150500,15,cambiali attive  CStudi,account.data_account_type_asset,Regular
+150600,True,150600,15,cambiali allo sconto  CStudi,account.data_account_type_asset,Regular
+150700,True,150700,15,cambiali all'incasso  CStudi,account.data_account_type_asset,Regular
+150900,True,150900,15,ricevute da emettere  CStudi,account.data_account_type_asset,Regular
+151000,True,151000,15,crediti insoluti  CStudi,account.data_account_type_asset,Regular
+151100,True,151100,15,cambiali insolute  CStudi,account.data_account_type_asset,Regular
+153100,True,153100,15,crediti da liquidare  CStudi,account.data_account_type_asset,Regular
+154000,True,154000,15,fondo svalutazione crediti  CStudi,account.data_account_type_asset,Regular
+154100,True,154100,15,fondo rischi su crediti  CStudi,account.data_account_type_asset,Regular
+16,True,16,1,CREDITI DIVERSI  CStudi,account.data_account_type_view,View
+1601,True,1601,16,IVA n/credito  CStudi,account.data_account_type_asset,Regular
+160200,True,160200,16,IVA c/acconto  CStudi,account.data_account_type_asset,Regular
+160500,True,160500,16,crediti per IVA  CStudi,account.data_account_type_asset,Regular
+160600,False,160600,16,iva indetraibile Cstudi,account.data_account_type_receivable,Receivable
+160700,True,160700,16,imposte c/acconto  CStudi,account.data_account_type_asset,Regular
+160701,False,160701,16,Erario c/acconto IRAP Cstudi,account.data_account_type_receivable,Receivable
+160705,False,160705,16,Credito Inail Cstudi,account.data_account_type_receivable,Receivable
+160706,False,160706,16,Erario c/ritenute su Int Attiv Cstudi,account.data_account_type_receivable,Receivable
+160800,True,160800,16,crediti per imposte  CStudi,account.data_account_type_asset,Regular
+160900,True,160900,16,crediti per ritenute subite  CStudi,account.data_account_type_asset,Regular
+161000,True,161000,16,crediti per cauzioni  CStudi,account.data_account_type_asset,Regular
+162000,True,162000,16,personale c/acconti  CStudi,account.data_account_type_asset,Regular
+162001,False,162001,16,amministratori c/acconti Cstudi,account.data_account_type_receivable,Regular
+162002,False,162002,16,personale c/anticipi trasferte Cstudi,account.data_account_type_receivable,Regular
+162003,False,162003,16,amministratori c/anticipi trasferte Cstudi,account.data_account_type_receivable,Regular
+163000,True,163000,16,crediti v/istituti previdenziali  CStudi,account.data_account_type_asset,Regular
+163001,True,163001,16,Acconti Inail CStudi,account.data_account_type_asset,Regular
+164000,True,164000,16,debitori diversi  CStudi,account.data_account_type_receivable,Receivable
+164001,False,164001,16,crediti v/partecipata Cstudi,account.data_account_type_receivable,Regular
+165000,False,165000,16,crediti v/società CStudi,account.data_account_type_receivable,Regular
+165001,False,165001,16,progetti CB4LLP ID 37782 c/acconti partner Cstudi,account.data_account_type_receivable,Regular
+165002,False,165002,16,progetti EM3 ID 34930 c/acconti partner Cstudi,account.data_account_type_receivable,Regular
+165003,False,165003,16,progetti EM4 ID 37254 c/acconti partner Cstudi,account.data_account_type_receivable,Regular
+165004,False,165004,16,progetti EUM Network 36057 c/acconti partner Cstudi,account.data_account_type_receivable,Regular
+17,True,17,1,compensaz per.prec. dipendenti,account.data_account_type_view,View
+175002,False,175002,17,* Fornitori c/anticipi Cstudi,account.data_account_type_receivable,Regular
+175001,False,175001,17,Tognarini Amm. Periodi Antec. CStudi,account.data_account_type_receivable,Regular
+175003,False,175003,17,Anticipi per Mob for Apprenticies C Studi,account.data_account_type_receivable,Regular
+18,True,18,1,DISPONIBILITÀ LIQUIDE  CStudi,account.data_account_type_view,View
+180001,False,180001,18,Contante CStudi,account.data_account_type_cash,Liquidity
+180002,False,180002,18,Banca CStudi,account.data_account_type_bank,Liquidity
+180100,True,180100,18,banche c/c  CStudi,account.data_account_type_bank,Liquidity
+181000,True,181000,18,c/c postali  CStudi,account.data_account_type_bank,Liquidity
+182000,True,182000,18,denaro in cassa  CStudi,account.data_account_type_cash,Liquidity
+182100,True,182100,18,assegni  CStudi,account.data_account_type_cash,Liquidity
+182200,True,182200,18,valori bollati  CStudi,account.data_account_type_cash,Liquidity
+183001,False,183001,18,caript c/c 428 cstudi,account.data_account_type_bank,Liquidity
+183008,False,183008,18,Banca Etruria c/c 3533 CStudi,account.data_account_type_bank,Liquidity
+183011,False,183011,18,Banca anticipi Etruria CStudi,account.data_account_type_bank,Liquidity
+183009,False,183009,18,Banca CRPL c/c 428 CStudi,account.data_account_type_bank,Liquidity
+183012,False,183012,18,Banca anticipi CRPL CStudi,account.data_account_type_bank,Liquidity
+183010,False,183010,18,Banca anticipi Unicredit CStudi,account.data_account_type_bank,Liquidity
+183029,False,183029,18,carta ricaricabile bpel cstudi,account.data_account_type_bank,Liquidity
+19,True,19,1,RATEI E RISCONTI ATTIVI  CStudi,account.data_account_type_view,View
+190200,True,190200,19,risconti attivi  CStudi,account.data_account_type_asset,Regular
+2,True,2,0,PASSIVO  CStudi,account.data_account_type_view,View
+20,True,20,2,PATRIMONIO NETTO  CStudi,account.data_account_type_view,View
+200100,True,200100,20,patrimonio netto  CStudi,account.data_account_type_liability,Regular
+200200,True,200200,20,utile d'esercizio  CStudi,account.data_account_type_liability,Regular
+200201,False,200201,20,Utile esercizi Precedenti Cstudi,account.data_account_type_payable,Regular
+200300,True,200300,20,perdita d'esercizio  CStudi,account.data_account_type_liability,Regular
+200400,True,200400,20,prelevamenti extra gestione  CStudi,account.data_account_type_liability,Regular
+22,True,22,2,FONDI PER RISCHI E ONERI  CStudi,account.data_account_type_view,View
+220100,True,220100,22,fondo per imposte  CStudi,account.data_account_type_liability,Regular
+220400,True,220400,22,fondo responsabilità civile  CStudi,account.data_account_type_liability,Regular
+220500,True,220500,22,fondo spese future  CStudi,account.data_account_type_liability,Regular
+221100,True,221100,22,fondo manutenzioni programmate  CStudi,account.data_account_type_liability,Regular
+23,True,23,2,TRATTAMENTO FINE RAPPORTO DI LAVORO  CStudi,account.data_account_type_view,View
+220200,False,220200,23,fondo previdenza dipendenti Cstudi,account.data_account_type_liability,Regular
+230100,True,230100,23,debiti per TFRL  CStudi,account.data_account_type_liability,Regular
+230101,False,230101,23,Fondo tfr dipendenti Cstudi,account.data_account_type_liability,Regular
+230102,False,230102,23,Fondo tfr amministratore Cstudi,account.data_account_type_liability,Regular
+24,True,24,2,DEBITI FINANZIARI  CStudi,account.data_account_type_view,View
+241000,True,241000,24,mutui passivi  CStudi,account.data_account_type_liability,Regular
+241100,True,241100,24,banche c/sovvenzioni  CStudi,account.data_account_type_liability,Regular
+242000,True,242000,24,banche c/c passivi  CStudi,account.data_account_type_liability,Regular
+242100,True,242100,24,banche c/RIBA all'incasso  CStudi,account.data_account_type_liability,Regular
+242200,True,242200,24,banche c/cambiali all'incasso  CStudi,account.data_account_type_liability,Regular
+242300,True,242300,24,banche c/anticipi su fatture  CStudi,account.data_account_type_liability,Regular
+242301,False,242301,24, BPEL c anticipi 382100 cstudi,account.data_account_type_payable,Regular
+242302,False,242302,24,BPEL c anticipo fatture estero cstudi,account.data_account_type_payable,Regular
+242303,False,242303,24,caript c/anticipi 496 cstudi,account.data_account_type_payable,Regular
+242304,False,242304,24,bpel c/ant 300268 cstudi,account.data_account_type_payable,Regular
+244000,True,244000,24,debiti v/altri finanziatori  CStudi,account.data_account_type_liability,Regular
+25,True,25,2,DEBITI COMMERCIALI  CStudi,account.data_account_type_view,View
+2501,True,2501,25,debiti verso fornitori  CStudi,account.data_account_type_payable,Payable
+250200,False,250200,25,debiti v/cscs srl x incasso o pagamento non dovuto,account.data_account_type_liability,Regular
+250300,True,250300,25,cambiali passive  CStudi,account.data_account_type_liability,Regular
+252000,True,252000,25,fatture da ricevere  CStudi,account.data_account_type_liability,Regular
+252100,True,252100,25,debiti da liquidare  CStudi,account.data_account_type_liability,Regular
+253000,True,253000,25,clienti c/acconti  CStudi,account.data_account_type_payable,Payable
+253056,False,253056,25,Acconti CREBUS CStudi,account.data_account_type_payable,Regular
+253059,False,253059,25,Acconti EUM NETWORK ID 36057 Cstudi,account.data_account_type_payable,Regular
+253062,False,253062,25,Acconti SOS NETWORK ID 22850 Cstudi,account.data_account_type_payable,Regular
+253063,False,253063,25,Acconti EM4_ID 37254 Cstudi,account.data_account_type_payable,Regular
+253064,False,253064,25,Acconti CB4LLP ID 37782 Cstudi,account.data_account_type_payable,Regular
+253065,False,253065,25,Acconti EM5  ID 38263 Cstudi,account.data_account_type_payable,Regular
+253067,False,253067,25,Acconti EM6 Cstudi,account.data_account_type_payable,Regular
+253066,False,253066,25,Acconti PerfectMatch ID 37387 Cstudi,account.data_account_type_payable,Regular
+253069,False,253069,25,AccontiMission Possible id 42246 Cstudi,account.data_account_type_payable,Regular
+253070,False,253070,25,Acconti M Transition id 39494 Cstudi,account.data_account_type_payable,Regular
+253071,False,253071,25,Acconti Connect Vet id 43003 Cstudi,account.data_account_type_payable,Regular
+26,True,26,2,DEBITI DIVERSI  CStudi,account.data_account_type_view,View
+260200,True,260200,26,RA CStudi ritenuta acconto 20%,account.data_account_type_liability,Regular
+2601,True,2601,26,IVA n/debito  CStudi,account.data_account_type_liability,Regular
+260201,False,260201,26,debiti per ritenute Irpef da versare CStudi,account.data_account_type_payable,Regular
+260202,False,260202,26,debiti per ritenute d'acconto da versare CStudi,account.data_account_type_payable,Regular
+260300,False,260300,26,debiti v/Fondo Est CStudi,account.data_account_type_payable,Regular
+260500,True,260500,26,erario c/IVA  CStudi,account.data_account_type_payable,Payable
+260501,False,260501,26,Erario c/ritenute passive Cstudi,account.data_account_type_liability,Regular
+260502,False,260502,26,erario c/imposta IRAP Cstudi,account.data_account_type_liability,Regular
+260504,False,260504,26,erario c/ritenute su professio Cstudi,account.data_account_type_liability,Regular
+260508,False,260508,26,11% rivaluta TFR Cstudi,account.data_account_type_liability,Regular
+260600,True,260600,26,debiti per imposte  CStudi,account.data_account_type_liability,Regular
+261900,True,261900,26,debiti per cauzioni  CStudi,account.data_account_type_liability,Regular
+262000,True,262000,26,debiti per salari CStudi,account.data_account_type_liability,Regular
+262010,False,262010,26,debiti per collaboratori CStudi,account.data_account_type_liability,Regular
+262020,False,262020,26,amministratori c/competenze Cstudi,account.data_account_type_liability,Regular
+262030,False,262030,26,debiti x rimborsi spese Cstudi,account.data_account_type_liability,Regular
+262100,True,262100,26,personale c/liquidazioni  CStudi,account.data_account_type_liability,Regular
+262200,True,262200,26,clienti c/cessione  CStudi,account.data_account_type_liability,Regular
+263000,True,263000,26,debiti v/istituti previdenziali  CStudi,account.data_account_type_liability,Regular
+263001,False,263001,26,debiti v/inps Cstudi,account.data_account_type_liability,Regular
+263002,False,263002,26,debiti v/inail Cstudi,account.data_account_type_liability,Regular
+263003,False,263003,26,sindacati c/trattenute Cstudi,account.data_account_type_liability,Regular
+264000,True,264000,26,creditori diversi  CStudi,account.data_account_type_payable,Payable
+27,True,27,2,RATEI E RISCONTI PASSIVI  CStudi,account.data_account_type_view,View
+270100,True,270100,27,ratei passivi  CStudi,account.data_account_type_liability,Regular
+270200,True,270200,27,risconti passivi  CStudi,account.data_account_type_liability,Regular
+28,True,28,2,CONTI TRANSITORI E DIVERSI  CStudi,account.data_account_type_view,View
+280100,True,280100,28,bilancio di apertura  CStudi,account.data_account_type_liability,Regular
+280200,True,280200,28,bilancio di chiusura  CStudi,account.data_account_type_liability,Regular
+281000,True,281000,28,IVA c/liquidazioni  CStudi,account.data_account_type_liability,Regular
+281100,True,281100,28,istituti previdenziali  CStudi,account.data_account_type_liability,Regular
+282000,True,282000,28,banca ... c/c  CStudi,account.data_account_type_liability,Regular
+282100,True,282100,28,banca ... c/c  CStudi,account.data_account_type_liability,Regular
+282200,True,282200,28,banca ... c/c  CStudi,account.data_account_type_liability,Regular
+29,True,29,2,CONTI DEI SISTEMI SUPPLEMENTARI  CStudi,account.data_account_type_view,View
+290100,True,290100,29,beni di terzi  CStudi,account.data_account_type_liability,Regular
+290200,True,290200,29,depositanti beni  CStudi,account.data_account_type_liability,Regular
+291100,True,291100,29,merci da ricevere  CStudi,account.data_account_type_liability,Regular
+291200,True,291200,29,fornitori c/impegni  CStudi,account.data_account_type_liability,Regular
+291300,True,291300,29,impegni per beni in leasing  CStudi,account.data_account_type_liability,Regular
+291400,True,291400,29,creditori c/leasing  CStudi,account.data_account_type_liability,Regular
+291600,True,291600,29,clienti c/impegni  CStudi,account.data_account_type_liability,Regular
+291700,True,291700,29,merci da consegnare  CStudi,account.data_account_type_liability,Regular
+292100,True,292100,29,rischi per effetti scontati  CStudi,account.data_account_type_liability,Regular
+292200,True,292200,29,banche c/effetti scontati  CStudi,account.data_account_type_liability,Regular
+292600,True,292600,29,rischi per fideiussioni  CStudi,account.data_account_type_liability,Regular
+292700,True,292700,29,creditori per fideiussioni  CStudi,account.data_account_type_liability,Regular
+293100,True,293100,29,rischi per avalli  CStudi,account.data_account_type_liability,Regular
+293200,True,293200,29,creditori per avalli  CStudi,account.data_account_type_liability,Regular
+3,True,3,0,VALORE DELLA PRODUZIONE  CStudi,account.data_account_type_view,View
+31,True,31,3,PRESTAZIONI IN CONVENZIONE CStudi,account.data_account_type_view,View
+3101,True,3101,31,prestazioni in convenzione CStudi,account.data_account_type_income,Regular
+310102,False,310102,31,IMY corsi in convenzione Cstudi,account.data_account_type_income,Regular
+310103,False,310103,31,VMYH ricavi in convenzione CStudi,account.data_account_type_income,Regular
+310104,False,310104,31,APPRENDISTATO ricavi corsi convenzione CStudi,account.data_account_type_income,Regular
+310155,False,310155,31,EYE ricavi convenzioni CStudi,account.data_account_type_income,Regular
+310159,False,310159,31,ricavi pools cx id 35363 Cstudi,account.data_account_type_income,Regular
+310161,False,310161,31,contributo prog Le mani dell'anima Cstudi,account.data_account_type_income,Regular
+310162,False,310162,31,ricavi prog. IQWBL id 35099 Cstudi,account.data_account_type_income,Regular
+310163,False,310163,31,ricavi prog. CREBUS Cstudi,account.data_account_type_income,Regular
+310164,False,310164,31,ricavi prog. EM IV ID 37254 Cstudi,account.data_account_type_income,Regular
+310110,False,310110,31,IMY Accommodation in convenzione Cstudi,account.data_account_type_income,Regular
+310120,False,310120,31,IMY transfer c/vendite CStudi,account.data_account_type_income,Regular
+310130,False,310130,31,IMI work placement c/vendite Cstudi,account.data_account_type_income,Regular
+310300,True,310300,31,rimborsi spese di vendita  CStudi,account.data_account_type_income,Regular
+311000,True,311000,31,resi su vendite  CStudi,account.data_account_type_income,Regular
+311100,True,311100,31,ribassi e abbuoni passivi  CStudi,account.data_account_type_income,Regular
+311200,True,311200,31,premi su vendite  CStudi,account.data_account_type_income,Regular
+32,True,32,3,RICAVI E PROVENTI DIVERSI  CStudi,account.data_account_type_view,View
+190100,True,190100,32,ratei attivi  CStudi,account.data_account_type_asset,Regular
+320100,True,320100,32,fitti attivi  CStudi,account.data_account_type_income,Regular
+320200,True,320200,32,proventi vari  CStudi,account.data_account_type_income,Regular
+321000,True,321000,32,arrotondamenti attivi  CStudi,account.data_account_type_income,Regular
+322000,True,322000,32,plusvalenze ordinarie diverse  CStudi,account.data_account_type_income,Regular
+323000,True,323000,32,sopravvenienze attive ordinarie diverse  CStudi,account.data_account_type_income,Regular
+324000,True,324000,32,insussistenze attive ordinarie diverse  CStudi,account.data_account_type_income,Regular
+33,True,33,3,RIMANENZE FINALI CSTUDI,account.data_account_type_view,View
+413100,True,413100,33,merci c/rimanenze finali  CStudi,account.data_account_type_income,Regular
+413101,True,413101,33,Progetti c/rimanenze finali EUM Network ID 36057 CStudi,account.data_account_type_income,Regular
+413102,True,413102,33,Progetti c/rimanenze finali SOS NETWORK ID 22850 CStudi,account.data_account_type_income,Regular
+413103,True,413103,33,Progetti c/rimanenze finali EM4 ID 37254 CStudi,account.data_account_type_income,Regular
+413104,True,413104,33,Progetti c/rimanenze finali CB4 LLP ID 37782 CStudi,account.data_account_type_income,Regular
+413105,True,413105,33,Progetti c/rimanenze finali EM5 ID 38263,account.data_account_type_income,Regular
+330000,True,330000,33,Progetti c/rimanenze finali EM 6 ,account.data_account_type_income,Regular
+413106,True,413106,33,Progetti c/rimanenze finali PERFECT MATCH ID 37387,account.data_account_type_income,Regular
+413107,True,413107,33,Progetti c/rimanenze finali CONNECT-VET ID 43003,account.data_account_type_income,Regular
+4,True,4,0,COSTI DELLA PRODUZIONE  CStudi,account.data_account_type_view,View
+41,True,41,4,COSTI PER BENI/SERVIZI VENDUTI  CStudi,account.data_account_type_view,View
+4101,True,4101,41,beni e servizi c/acquisti  CStudi,account.data_account_type_expense,Regular
+410110,True,410110,41,Borse di Studio tirocinanti interni CStudi,account.data_account_type_expense,Regular
+410200,True,410200,41,beni/servizi per manutenzioni servizi venduti CStudi,account.data_account_type_expense,Regular
+410300,False,410300,41,acquisto beni inf a € 516.46,account.data_account_type_expense,Regular
+410500,True,410500,41,merci c/apporti  CStudi,account.data_account_type_expense,Regular
+411000,True,411000,41,resi su acquisti  CStudi,account.data_account_type_expense,Regular
+411100,True,411100,41,ribassi e abbuoni attivi  CStudi,account.data_account_type_expense,Regular
+411200,True,411200,41,premi su acquisti  CStudi,account.data_account_type_expense,Regular
+412100,True,412100,41,progetti c/esistenze iniziali  CStudi,account.data_account_type_expense,Regular
+412130,True,412130,41,progetti c/esistenze iniziali  CREBUS CStudi,account.data_account_type_expense,Regular
+412132,True,412132,41,progetti c/esistenze iniziali VOUCHER CStudi,account.data_account_type_expense,Regular
+412136,True,412136,41,progetti c/esistenze iniziali EUM Network ID 36057 CStudi,account.data_account_type_expense,Regular
+412137,True,412137,41,progetti c/esistenze iniziali SOS NETWORK ID 22850 CStudi,account.data_account_type_expense,Regular
+412138,True,412138,41,progetti c/esistenze iniziali EM4 ID 37254 CStudi,account.data_account_type_expense,Regular
+412139,True,412139,41,progetti c/esistenze iniziali CB4 LLP ID 37782 CStudi,account.data_account_type_expense,Regular
+412140,True,412140,41,progetti c/esistenze iniziali EM5 ID 38263,account.data_account_type_expense,Regular
+412141,True,412141,41,progetti c/esistenze iniziali PERFECT MATCH ID 37387,account.data_account_type_expense,Regular
+412147,True,412147,41,progetti c/esistenze iniziali CONNECT-VET ID 43003,account.data_account_type_expense,Regular
+412200,True,412200,41,materie di consumo c/esistenze iniziali  CStudi,account.data_account_type_expense,Regular
+413200,True,413200,41,materie di consumo c/rimanenze finali  CStudi,account.data_account_type_expense,Regular
+42,False,42,4,COSTI PER SERVIZI CStudi,account.data_account_type_view,View
+420100,True,420100,42,costi di trasporto  CStudi,account.data_account_type_expense,Regular
+420101,False,420101,42,spese di viaggio CStudi,account.data_account_type_expense,Regular
+420200,True,420200,42,costi per energia  CStudi,account.data_account_type_expense,Regular
+420300,True,420300,42,costi di pubblicità  CStudi,account.data_account_type_expense,Regular
+420310,True,420310,42,spese di rappresentanza CStudi,account.data_account_type_expense,Regular
+420311,True,420311,42,Partecipazioni a fiere e promozioni/meeting Cstudi,account.data_account_type_expense,Regular
+420400,True,420400,42,costi di consulenze  CStudi,account.data_account_type_expense,Regular
+420401,False,420401,42,compensi a professionisti cstudi,account.data_account_type_expense,Regular
+420406,False,420406,42,compensi per consulenti legali Cstudi,account.data_account_type_expense,Regular
+420405,False,420405,42,compensi a docenti apprendistato cstudi,account.data_account_type_expense,Regular
+420402,False,420402,42,spese consulenze di terzi Cstudi,account.data_account_type_expense,Regular
+420403,False,420403,42,compensi a professionisti afferenti attività CStudi,account.data_account_type_expense,Regular
+420404,False,420404,42,spese consulenti elaborazione dati Cstudi,account.data_account_type_expense,Regular
+420500,True,420500,42,costi postali  CStudi,account.data_account_type_expense,Regular
+420501,False,420501,42,canone assistenza cstudi,account.data_account_type_expense,Regular
+420502,False,420502,42,"cancelleria, riviste, stampe Cstudi",account.data_account_type_expense,Regular
+420504,False,420504,42,spese quote associative Cstudi,account.data_account_type_expense,Regular
+420505,False,420505,42,spese varie Cstudi,account.data_account_type_expense,Regular
+420506,False,420506,42,spese carburante Cstudi,account.data_account_type_expense,Regular
+420507,False,420507,42,parcheggi autovetture cstudi,account.data_account_type_expense,Regular
+420510,False,420510,42,Pedaggi autostradali CStudi,account.data_account_type_expense,Regular
+420508,False,420508,42,Alberghi e ristoranti CStudi,account.data_account_type_expense,Regular
+420511,False,420511,42,alberghi e ristoranti per clienti inerenti attività CStudi,account.data_account_type_bank,Regular
+420509,False,420509,42,alberghi e ristoranti di rappresentanza CStudi,account.data_account_type_expense,Regular
+420512,False,420512,42,altre spese di rappresentanza imp > 50€ Cstudi,account.data_account_type_expense,Regular
+420514,False,420514,42,"omaggi < 50€ (iva detraib imp <25,82€ Cstudi",account.data_account_type_expense,Regular
+420513,False,420513,42,rimborsi spese a piè lista Cstudi,account.data_account_type_expense,Regular
+420600,True,420600,42,costi telefonici  CStudi,account.data_account_type_expense,Regular
+420602,False,420602,42,spese telefono cellulare cstudi,account.data_account_type_expense,Regular
+420603,False,420603,42,altre spese telefoniche cstudi,account.data_account_type_expense,Regular
+420700,True,420700,42,costi di assicurazione  CStudi,account.data_account_type_expense,Regular
+420800,True,420800,42,costi di vigilanza  CStudi,account.data_account_type_expense,Regular
+420900,True,420900,42,costi per i locali  CStudi,account.data_account_type_expense,Regular
+420904,False,420904,42,spese per pulizie CStudi,account.data_account_type_expense,Regular
+421000,True,421000,42,costi di esercizio automezzi  CStudi,account.data_account_type_expense,Regular
+421100,True,421100,42,costi di manutenzione e riparazione  CStudi,account.data_account_type_expense,Regular
+421101,True,421101,42,costi di manutenzione automezzi  CStudi,account.data_account_type_expense,Regular
+421102,True,421102,42,costi Partner EM 4 CStudi,account.data_account_type_expense,Regular
+421200,True,421200,42,provvigioni passive  CStudi,account.data_account_type_expense,Regular
+421300,True,421300,42,spese di incasso  CStudi,account.data_account_type_expense,Regular
+43,True,43,4,COSTI PER GODIMENTO BENI DI TERZI  CStudi,account.data_account_type_view,View
+430100,True,430100,43,fitti passivi  CStudi,account.data_account_type_expense,Regular
+430200,True,430200,43,canoni di leasing  CStudi,account.data_account_type_expense,Regular
+430300,False,430300,43,noleggi cstudi,account.data_account_type_expense,Regular
+430400,False,430400,43,affitto locali/attrezz corsi Cstudi,account.data_account_type_expense,Regular
+44,True,44,4,COSTI PER IL PERSONALE  CStudi,account.data_account_type_view,View
+440101,True,440101,44,salari  CStudi,account.data_account_type_expense,Regular
+440200,True,440200,44,oneri sociali  CStudi,account.data_account_type_expense,Regular
+440201,False,440201,44,contributi inps Cstudi,account.data_account_type_expense,Regular
+440202,False,440202,44,contributi inail Cstudi,account.data_account_type_expense,Regular
+440203,False,440203,44,Fondo Est Cstudi,account.data_account_type_expense,Regular
+440300,True,440300,44,TFRL  CStudi,account.data_account_type_expense,Regular
+440301,False,440301,44,TFRL dipendenti Cstudi,account.data_account_type_expense,Regular
+440302,False,440302,44,TFRL amministratori Cstudi,account.data_account_type_expense,Regular
+440400,True,440400,44,altri costi per il personale  CStudi,account.data_account_type_expense,Regular
+440401,False,440401,44,compensi per prestazioni occas cstudi,account.data_account_type_expense,Regular
+440402,False,440402,44,costi per collaboratori CStudi,account.data_account_type_expense,Regular
+440403,False,440403,44,compensi amministratore CStudi,account.data_account_type_expense,Regular
+45,True,45,4,AMMORTAMENTI IMMOBILIZZAZIONI IMMATERIALI  CStudi,account.data_account_type_view,View
+450100,True,450100,45,ammortamento costi di impianto  CStudi,account.data_account_type_expense,Regular
+450600,True,450600,45,ammortamento software  CStudi,account.data_account_type_expense,Regular
+450800,True,450800,45,ammortamento avviamento  CStudi,account.data_account_type_expense,Regular
+46,True,46,4,AMMORTAMENTI IMMOBILIZZAZIONI MATERIALI  CStudi,account.data_account_type_view,View
+460100,True,460100,46,ammortamento fabbricati  CStudi,account.data_account_type_expense,Regular
+460200,True,460200,46,ammortamento impianti e macchinari  CStudi,account.data_account_type_expense,Regular
+460400,True,460400,46,ammortamento attrezzature commerciali  CStudi,account.data_account_type_expense,Regular
+460500,True,460500,46,ammortamento macchine d'ufficio  CStudi,account.data_account_type_expense,Regular
+460600,True,460600,46,ammortamento arredamento  CStudi,account.data_account_type_expense,Regular
+460700,True,460700,46,ammortamento automezzi  CStudi,account.data_account_type_expense,Regular
+460800,True,460800,46,ammortamento imballaggi durevoli  CStudi,account.data_account_type_expense,Regular
+47,True,47,4,SVALUTAZIONI  CStudi,account.data_account_type_view,View
+470100,True,470100,47,svalutazioni immobilizzazioni immateriali  CStudi,account.data_account_type_expense,Regular
+470200,True,470200,47,svalutazioni immobilizzazioni materiali  CStudi,account.data_account_type_expense,Regular
+470600,True,470600,47,svalutazione crediti  CStudi,account.data_account_type_expense,Regular
+48,True,48,4,ACCANTONAMENTI  CStudi,account.data_account_type_view,View
+481,True,481,48,ACCANTONAMENTI PER RISCHI  CStudi,account.data_account_type_view,View
+481400,True,481400,481,accantonamento per responsabilità civile  CStudi,account.data_account_type_expense,Regular
+482,True,482,48,ALTRI ACCANTONAMENTI  CStudi,account.data_account_type_view,View
+482100,True,482100,482,accantonamento per spese future  CStudi,account.data_account_type_expense,Regular
+482300,True,482300,482,accantonamento per manutenzioni programmate  CStudi,account.data_account_type_expense,Regular
+49,True,49,4,ONERI DIVERSI  CStudi,account.data_account_type_view,View
+490100,True,490100,49,oneri fiscali diversi  CStudi,account.data_account_type_expense,Regular
+490101,False,490101,49,imposte e tasse Cstudi,account.data_account_type_expense,Regular
+490102,False,490102,49,penalità esattoriali Cstudi,account.data_account_type_expense,Regular
+490300,True,490300,49,oneri vari  CStudi,account.data_account_type_expense,Regular
+490301,False,490301,49,costi indeducibili Cstudi,account.data_account_type_expense,Regular
+490302,False,490302,49,multe Cstudi,account.data_account_type_expense,Regular
+490500,True,490500,49,perdite su crediti  CStudi,account.data_account_type_expense,Regular
+491000,True,491000,49,arrotondamenti passivi  CStudi,account.data_account_type_expense,Regular
+492000,True,492000,49,minusvalenze ordinarie diverse  CStudi,account.data_account_type_expense,Regular
+493000,True,493000,49,sopravvenienze passive ordinarie diverse  CStudi,account.data_account_type_expense,Regular
+494000,True,494000,49,insussistenze passive ordinarie diverse  CStudi,account.data_account_type_expense,Regular
+5,True,5,0,PROVENTI E ONERI FINANZIARI  CStudi,account.data_account_type_view,View
+51,True,51,5,PROVENTI FINANZIARI  CStudi,account.data_account_type_view,View
+511000,True,511000,51,interessi attivi v/clienti  CStudi,account.data_account_type_income,Regular
+511500,True,511500,51,interessi attivi bancari  CStudi,account.data_account_type_income,Regular
+511600,True,511600,51,interessi attivi postali  CStudi,account.data_account_type_income,Regular
+514000,True,514000,51,proventi finanziari diversi  CStudi,account.data_account_type_income,Regular
+52,True,52,5,ONERI FINANZIARI  CStudi,account.data_account_type_view,View
+520100,True,520100,52,interessi passivi v/fornitori  CStudi,account.data_account_type_expense,Regular
+520150,False,520150,52,interessi passivi v/erario Cstudi,account.data_account_type_expense,Regular
+520200,True,520200,52,interessi passivi bancari  CStudi,account.data_account_type_expense,Regular
+520201,False,520201,52,Interessi bancari passivi su anticipi Cstudi,account.data_account_type_expense,Regular
+520202,False,520202,52,interessi bancari passivi su c/c Cstudi,account.data_account_type_expense,Regular
+520300,True,520300,52,sconti passivi bancari  CStudi,account.data_account_type_expense,Regular
+521000,True,521000,52,interessi passivi su mutui  CStudi,account.data_account_type_expense,Regular
+524000,True,524000,52,oneri finanziari diversi  CStudi,account.data_account_type_expense,Regular
+524001,False,524001,52,oneri bancari per anticipi Cstudi,account.data_account_type_expense,Regular
+524002,False,524002,52,oneri bancari per c/c Cstudi,account.data_account_type_expense,Regular
+524003,False,524003,52,Spese bancarie per c/c Cstudi,account.data_account_type_expense,Regular
+7,True,7,0,PROVENTI E ONERI STRAORDINARI  CStudi,account.data_account_type_view,View
+71,True,71,7,PROVENTI STRAORDINARI  CStudi,account.data_account_type_view,View
+710100,True,710100,71,plusvalenze straordinarie  CStudi,account.data_account_type_income,Regular
+710200,True,710200,71,sopravvenienze attive straordinarie  CStudi,account.data_account_type_income,Regular
+710300,True,710300,71,insussistenze attive straordinarie  CStudi,account.data_account_type_income,Regular
+72,True,72,7,ONERI STRAORDINARI  CStudi,account.data_account_type_view,View
+720100,True,720100,72,minusvalenze straordinarie  CStudi,account.data_account_type_expense,Regular
+720200,True,720200,72,sopravvenienze passive straordinarie  CStudi,account.data_account_type_expense,Regular
+720300,True,720300,72,insussistenze passive straordinarie  CStudi,account.data_account_type_expense,Regular
+720400,True,720400,72,imposte esercizi precedenti  CStudi,account.data_account_type_expense,Regular
+78,False,78,7,EROGAZIONI PER CONTO DI ALTRI ENTI - C Studi ,account.data_account_type_view,View
+780100,False,780100,78,Borse C Studi erogate per conto di altri enti - EM VI,account.data_account_type_expense,Regular
+780101,False,780101,78,Borse C Studi erogate per conto di altri enti - EM V,account.data_account_type_expense,Regular
+8,True,8,0,IMPOSTE DELL'ESERCIZIO  CStudi,account.data_account_type_view,View
+810100,True,810100,8,imposte dell'esercizio  CStudi,account.data_account_type_expense,Regular
+810101,False,810101,8,Irap dell'esercizio Cstudi,account.conf_account_type_tax,Regular
+9,True,9,0,CONTI DI RISULTATO  CStudi,account.data_account_type_view,View
+910100,True,910100,9,conto di risultato economico  CStudi,account.data_account_type_expense,Regular
+910200,True,910200,9,stato patrimoniale CStudi,account.data_account_type_expense,Regular
+200500 storno,True,200500 storno,,RA - CStudi ritenuta acconto 20%,account.data_account_type_liability,Regular
+440100,True,440100,,salari  CStudi extracontab,account.data_account_type_expense,Regular

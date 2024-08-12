@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+      
+      
+      <record id="view_task_transition_form" model="ir.ui.view">
+            <field name="name">project.task.transition.form</field>
+            <field name="model">project.task.transition</field>
+            <field name="arch" type="xml">
+                <form string="Task Transition" version="7.0">
+                    <group col="4">
+                        <field name="task_from_id"/>
+                        <field name="task_to_id"/>  
+                        <field name='trigger'/>
+                        <field name="interval_nbr"/>
+                        <field name="interval_type"/>
+                        
+                    </group>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_task_transition_tree" model="ir.ui.view">
+            <field name="name">project.task.transition.tree</field>
+            <field name="model">project.task.transition</field>
+            <field name="arch" type="xml">
+                <tree editable="top" string="Task Transition">
+                    <field name="task_from_id"/>
+                    <field name="task_to_id"/>  
+                    <field name='trigger'/>
+                    <field name="interval_nbr"/>
+                    <field name="interval_type"/>
+                </tree>
+            </field>
+        </record>
+        
+        
+      <record id="view_diagram_task_form2" model="ir.ui.view">
+            <field name="name">phase.task.form2</field>
+            <field name="model">project.task</field>
+            <field name="inherit_id" ref="project.view_task_form2"/>
+            <field name="arch" type="xml">
+                
+                
+                <page string="Extra Info" position="after">
+                    <page string="Relation"> 
+                    <separator string="Previous Activities"/>
+                    <field name="from_ids" mode="tree" context="{'default_task_to_id': active_id}">
+                        <tree string="From Task" editable="bottom">
+                            <field name="task_from_id" domain="[('project_id', '=', parent.project_id)]"/>
+                            <field name='trigger'/>
+                            <field name="interval_nbr"/>
+                            <field name="interval_type"/>
+                        </tree>
+                        <form string="Task Transitions" version="7.0">
+                            <group col="4">
+                                <field name="task_from_id" domain="[('project_id', '=', parent.project_id)]"/>
+                                <field name='trigger'/>
+                                <field name="interval_nbr"/>
+                                <field name="interval_type"/>
+                            </group>
+                        </form>
+                    </field>
+                    <separator string="Next Activities"/>
+                    <field name="to_ids" mode="tree" context="{'default_task_from_id': active_id}">
+                        <tree string="To Task" editable="bottom">
+                            <field name="task_to_id" domain="[('project_id', '=', parent.project_id)]"/>
+                            <field name='trigger'/>
+                            <field name="interval_nbr"/>
+                            <field name="interval_type"/>
+                        </tree>
+                        <form string="To Task" version="7.0">
+                            <group col="4">
+                                <field name="task_to_id" domain="[('project_id', '=', parent.project_id)]"/>
+                                <field name='trigger'/>
+                                <field name="interval_nbr"/>
+                                <field name="interval_type"/>
+
+                            </group>
+                        </form>
+                    </field>
+                    </page>
+                </page>
+            </field>
+        </record>
+        
+        <record id="view_project_project_diagram" model="ir.ui.view">
+        <field name="name">project.project.diagram</field>
+        <field name="model">project.project</field>
+        <field name="arch" type="xml">
+            <diagram string="Project Editor">
+                <node object="project.task"  >
+                    <field name="name"/>
+
+                </node>
+                <arrow object="project.task.transition" source="task_from_id" destination="task_to_id" label="['name']">
+                
+                    <field name="task_from_id"/>
+                    <field name="task_to_id"/>
+                    <field name="interval_nbr"/>
+                    <field name="interval_type"/>
+                </arrow>
+            </diagram>
+        </field>
+    </record>
+
+    </data>
+</openerp>

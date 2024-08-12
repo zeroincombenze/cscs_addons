@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+         <act_window name="Mass Log Note"
+                res_model="mail.compose.message"
+                src_model="res.partner"
+                view_mode="form"
+                multi="True"
+                target="new"
+                key2="client_action_multi"
+                id="mass_log_note"
+                context="{'default_composition_mode': 'mass_mail','mail_compose_log':True}"/>
+    </data>
+</openerp>

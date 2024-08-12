@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+      <!-- Job position menu added to project configuration -->
+        <menuitem id="menu_project_job_postion"
+                  action="hr.action_hr_job"
+                  name="Job Positions"
+                  parent="base.menu_definitions" sequence="50" />
+        <!--  Project Form inherited form -->
+        <record id="view_project_extension_form" model="ir.ui.view">
+            <field name="name">project_extension.project.form.inherit</field>
+            <field name="model">project.project</field>
+            <field name="inherit_id" ref="project.edit_project"/>
+            <field name="arch" type="xml">
+                <!-- Added ID on the top of teh page-->
+                <field name="analytic_account_id" position="after">
+                    <label for="id"  string="Project ID"/>
+                    <h1>
+                        <field name="id" readonly="1" string="Project ID"/>
+                    </h1>
+                </field>
+                <!-- Added mobility  above eth Customer field -->
+                <xpath expr="//div[@name='options_active']" position="inside">
+                   <field name="mobility" class="oe_inline"/>
+                   <label for="mobility"/>
+                </xpath>
+                <!-- partner relations -->
+                <field name="user_id" position="after">
+                     <field name="intermediary_org_tutor_id" attrs="{'invisible':[('mobility','=', False)]}"/>
+                     <field name="host_org_tutor_id" attrs="{'invisible':[('mobility','=', False)]}"/>
+                     <field name="host_org_representative_id" attrs="{'invisible':[('mobility','=', False)]}"/>
+                     <field name="host_organization_id" attrs="{'invisible':[('mobility','=', False)]}"/>
+                </field>
+                <field name="partner_id" position="after">
+                     <field name="sending_tutor_id" attrs="{'invisible':[('mobility','=', False)]}"/>
+                      <field name="trainee_id" attrs="{'invisible':[('mobility','=', False)]}"/>
+                </field>
+                <!-- Added a tab before Teams tab-->
+                <xpath expr="//page[@name='team']" position="before">
+                    <page string="Workflow" name="workflow"  >
+                        <group colspan="4">
+                            <field name="workflow" nolabel="1"  />
+                        </group>
+                    </page>
+                </xpath>
+                <!-- Added addtional fileds inside Otherinfo Tab-->
+                <xpath expr="//group[@name='misc']" position="before">
+                   <group>
+                        <field name="laguage_course_id" attrs="{'invisible':[('mobility','=', False)]}"/>
+                   </group>
+                   <group>
+                       <field name="work_time_description" attrs="{'invisible':[('mobility','=', False)]}" />
+                   </group>
+                 </xpath>
+                 <field name="parent_id" position="after">
+                     <field name="intro_meeting_date" attrs="{'invisible':[('mobility','=', False)]}"/>
+                      <field name="intro_metting_note" colspan="4" attrs="{'invisible':[('mobility','=', False)]}"/>
+                 </field>
+                 <!-- Added addtional Tabs after Stages-->
+                 <xpath expr="//page[@name='project_stages']" position="after">
+                     <!-- Logistic Tab-->
+                     <page string="Logistic" name="logistic" attrs="{'invisible':[('mobility','=', False)]}">
+                         <group>
+                             <field name="hosting"/>
+                             <field name="arrival_date" attrs="{'invisible':[('hosting','=', False)]}"/>
+                             <field name="departure_date" attrs="{'invisible':[('hosting','=', False)]}"/>
+                             <field name="accomodation_link" widget="url" attrs="{'invisible':[('hosting','=', True)]}"/>
+                             <field name="transfer"/>
+                             <field name="transfer_description"/>
+                         </group>
+                     </page>
+                     <!-- Profile Tab-->
+                     <page string="Profile" name="profile" attrs="{'invisible':[('mobility','=', False)]}">
+                         <group >
+                             <field name="survey" invisible="1"/>
+                             <field name="response" invisible="1"/>
+                              <field name="job_id" on_change="onchange_job(job_id)"/>
+                         </group>
+                         <group>
+                             <div class="oe_right oe_button_box">
+                                 <button name="%(survey.action_view_survey_question_message)d" type="action"
+                                    string="Start Interview" help="Answer related job question"
+                                    context="{'survey_id': survey, 'response_id': [response], 'response_no':0 ,'active' : response, 'object' : 'project.project'}"
+                                    attrs="{'invisible':[('survey','=',False)]}"/>
+                                <button name="action_print_job_survey" type="object"
+                                    string="Print Interview" help="Print interview report"
+                                    attrs="{'invisible':[('survey','=',False)]}"/>
+                             </div>
+                         </group>
+                         <group colspan="4">
+                             <field name="work_assignment" colspan="4" row="10"/>
+                         </group>
+                     </page>
+                     <!-- Assessment Tab-->
+                     <page string="Assessment" name="assessment" attrs="{'invisible':[('mobility','=', False)]}">
+                         <group >
+                             <field name="assessment_form_link" widget="url" />
+                         </group>
+                         <group>
+                             <field name="score_1" />
+                             <field name="assessment_1" colspan="4"/>
+                         </group>
+                         <group>
+                             <field name="score_2" />
+                             <field name="assessment_2" colspan="4"/>
+                         </group>
+                         <group>
+                             <field name="score_3" />
+                             <field name="assessment_3" colspan="4"/>
+                         </group>
+                         <group>
+                             <field name="score_4" />
+                             <field name="assessment_4" colspan="4"/>
+                         </group>
+                         <group>
+                             <field name="score_5" />
+                             <field name="assessment_5"/>
+                         </group>
+                         <group>
+                             <field name="score_6" />
+                             <field name="assessment_6" colspan="4"/>
+                         </group>
+                         <group>
+                             <field name="score_7" />
+                             <field name="assessment_7" colspan="4"/>
+                         </group>
+                         <group>
+                             <field name="score_8" />
+                             <field name="assessment_8" colspan="4"/>
+                         </group>
+                         <group>
+                             <field name="score_9" />
+                             <field name="assessment_9" colspan="4"/>
+                         </group>
+                         <group>
+                             <field name="score_10" />
+                             <field name="assessment_10" colspan="4"/>
+                         </group>
+                    </page>
+                     <!-- Note Tab-->
+                     <page string="Note" name="note">
+                         <field name="long_note" nolabel="1" />
+                     </page>
+                      <page string="Connections" name="connections">
+                            <field colspan="4" name="connection_ids" widget="many2many_kanban">
+                                <kanban quick_create="false" create="true">
+                                    <field name="color"/>
+                                    <field name="name"/>
+                                    <field name="title"/>
+                                    <field name="email"/>
+                                    <field name="parent_id"/>
+                                    <field name="is_company"/>
+                                    <field name="function"/>
+                                    <field name="phone"/>
+                                    <field name="street"/>
+                                    <field name="street2"/>
+                                    <field name="zip"/>
+                                    <field name="city"/>
+                                    <field name="country_id"/>
+                                    <field name="mobile"/>
+                                    <field name="fax"/>
+                                    <field name="state_id"/>
+                                    <field name="has_image"/>
+                                    <templates>
+                                        <t t-name="kanban-box">
+                                            <t t-set="color" t-value="kanban_color(record.color.raw_value)"/>
+                                            <div t-att-class="color + (record.title.raw_value == 1 ? ' oe_kanban_color_alert' : '')" style="position: relative">
+                                                <a t-if="! read_only_mode" type="delete" style="position: absolute; right: 0; padding: 4px; diplay: inline-block">X</a>
+                                                <div class="oe_module_vignette">
+                                                <a type="open">
+                                                    <t t-if="record.has_image.raw_value === true">
+                                                        <img t-att-src="kanban_image('res.partner', 'image', record.id.value, {'preview_image': 'image_small'})" class="oe_avatar oe_kanban_avatar_smallbox"/>
+                                                    </t>
+                                                    <t t-if="record.image and record.image.raw_value !== false">
+                                                        <img t-att-src="'data:image/png;base64,'+record.image.raw_value" class="oe_avatar oe_kanban_avatar_smallbox"/>
+                                                    </t>
+                                                    <t t-if="record.has_image.raw_value === false and (!record.image or record.image.raw_value === false)">
+                                                        <t t-if="record.is_company.raw_value === true">
+                                                            <img t-att-src='_s + "/base/static/src/img/company_image.png"' class="oe_kanban_image oe_kanban_avatar_smallbox"/>
+                                                        </t>
+                                                        <t t-if="record.is_company.raw_value === false">
+                                                            <img t-att-src='_s + "/base/static/src/img/avatar.png"' class="oe_kanban_image oe_kanban_avatar_smallbox"/>
+                                                        </t>
+                                                    </t>
+                                                </a>
+                                                    <div class="oe_module_desc">
+                                                        <div class="oe_kanban_box_content oe_kanban_color_bglight oe_kanban_color_border">
+                                                            <table class="oe_kanban_table">
+                                                                <tr>
+                                                                    <td class="oe_kanban_title1" align="left" valign="middle">
+                                                                        <h4><a type="open"><field name="name"/></a></h4>
+                                                                        <i><div t-if="record.function.raw_value">
+                                                                            <field name="function"/></div></i>
+                                                                        <div><a t-if="record.email.raw_value" title="Mail" t-att-href="'mailto:'+record.email.value">
+                                                                            <field name="email"/>
+                                                                        </a></div>
+                                                                        <div t-if="record.phone.raw_value">Phone: <field name="phone"/></div>
+                                                                        <div t-if="record.mobile.raw_value">Mobile: <field name="mobile"/></div>
+                                                                        <div t-if="record.fax.raw_value">Fax: <field name="fax"/></div>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </t>
+                                    </templates>
+                                </kanban>
+                            </field>
+                     </page>
+                </xpath>
+            </field>
+       </record>
+       <!--  Project Kanban inherited to show trainee avatar -->
+        <record id="view_project_extension_kanban" model="ir.ui.view">
+            <field name="name">project_extension.project.kanban.inherit</field>
+            <field name="model">project.project</field>
+            <field name="inherit_id" ref="project.view_project_kanban"/>
+            <field name="arch" type="xml">
+                <field name="effective_hours" position="before">
+                  <field name="trainee_id"/>
+                </field>
+                <xpath expr="//div[@class='oe_kanban_project_avatars']" position="inside">
+                    <img t-if="record.trainee_id.raw_value" t-att-src="kanban_image('res.partner', 'image_small', record.trainee_id.raw_value)" t-att-data-member_id="record.trainee_id.name"/>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</openerp>
